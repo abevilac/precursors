@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.10.17)  25 MAY 2018 12:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.10.17)  25 MAY 2018 14:04
 entering extended mode
 **./StochFFMEq.tex
 (StochFFMEq.tex
@@ -590,9 +590,6 @@ Package rerunfilecheck Info: File `StochFFMEq.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 343.
  ) 
 Here is how much of TeX's memory you used:
@@ -626,7 +623,7 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX
 s/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb>
-Output written on StochFFMEq.pdf (23 pages, 2266221 bytes).
+Output written on StochFFMEq.pdf (23 pages, 2265856 bytes).
 PDF statistics:
  505 PDF objects out of 1000 (max. 8388607)
  91 named destinations out of 1000 (max. 500000)
