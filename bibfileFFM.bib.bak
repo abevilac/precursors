@@ -1,0 +1,410 @@
+@book{Bevilacqua2016,
+  title={{Doubly stochastic models for volcanic hazard assessment at Campi Flegrei caldera}},
+  author={Bevilacqua, A.},
+  series={Theses},
+  volume={21},
+  pages={227},
+  year={2016},
+  ISBN={ISBN 978-88-7642-556-1},
+  editor={Edizioni della Normale},
+  publisher={Birkh\"auser/Springer}
+}
+
+@article{Cornelius1995,
+author = {Cornelius, R.R. and Voight, B.},
+journal = {Journal of Volcanology and Geothermal Research},
+pages = {295-320},
+title = {{Graphical and PC-software analysis of volcano eruption precursors according to the Material Failure Forecast Method (FFM)}},
+volume = {64},
+year = {1995}
+}
+
+@article{HullWhite1990,
+author = {Hull, J. and White, A.},
+journal = {The Review of Financial Studies},
+pages = {573–592},
+title = {{Pricing Interest Rate Derivatives Securities}},
+volume = {3},
+year = {1990}
+}
+
+@article{Voight1988,
+author = {Voight, B.},
+journal = {Nature},
+pages = {125-130},
+title = {{A method for prediction of volcanic eruptions}},
+volume = {332},
+year = {1988}
+}
+
+
+
+
+@article {Bell2011,
+author = {Bell, Andrew F. and Naylor, Mark and Heap, Michael J. and Main, Ian G.},
+title = {Forecasting volcanic eruptions and other material failure phenomena: An evaluation of the failure forecast method},
+journal = {Geophysical Research Letters},
+volume = {38},
+number = {15},
+issn = {1944-8007},
+url = {http://dx.doi.org/10.1029/2011GL048155},
+doi = {10.1029/2011GL048155},
+pages = {5},
+keywords = {Monitoring, forecasting, prediction, Precursors, Statistical analysis, Volcano monitoring, Volcanic hazards and risks, deformation modeling, failure forecast method, volcano forecasting},
+year = {2011},
+note = {L15304},
+}
+
+@article{Chiodini2016,
+	author = {Chiodini, G. and Paonita, A. and Aiuppa, A. and Costa, A. and Caliro, S. and De Martino, P. and Acocella, V. and Vandemeulebrouck, J.},
+	title = {Magmas near the critical degassing pressure drive volcanic unrest towards a critical state},
+	journal = {Nature Communications},
+	volume = {7},
+	year = {2016},
+    pages = {1-9},
+	url = {http://dx.doi.org/10.1038/ncomms13712}
+}
+
+@article {Kilburn1998,
+author = {Kilburn, Christopher R. J. and Voight, Barry},
+title = {Slow rock fracture as eruption precursor at Soufriere Hills Volcano, Montserrat},
+journal = {Geophysical Research Letters},
+volume = {25},
+number = {19},
+issn = {1944-8007},
+url = {http://dx.doi.org/10.1029/98GL01609},
+doi = {10.1029/98GL01609},
+pages = {3665--3668},
+keywords = {Physical Properties of Rocks: Fracture and flow, Seismology: Volcano seismology, Structural Geology: Fractures and faults, Volcanology: Eruption monitoring},
+year = {1998},
+}
+
+@article{Kilburn2003,
+title = "Multiscale fracturing as a key to forecasting volcanic eruptions",
+journal = "Journal of Volcanology and Geothermal Research",
+volume = "125",
+number = "3",
+pages = "271 - 289",
+year = "2003",
+issn = "0377-0273",
+doi = "https://doi.org/10.1016/S0377-0273(03)00117-3",
+url = "http://www.sciencedirect.com/science/article/pii/S0377027303001173",
+author = "Christopher R.J. Kilburn",
+keywords = "eruption forecasting, fracture mechanics, slow cracking, Boltzmann distribution"
+}
+
+@article{Marzocchi2012,
+author="Marzocchi, Warner
+and Bebbington, Mark S.",
+title="Probabilistic eruption forecasting at short and long time scales",
+journal="Bulletin of Volcanology",
+year="2012",
+month="Oct",
+day="01",
+volume="74",
+number="8",
+pages="1777--1805",
+abstract="Any effective volcanic risk mitigation strategy requires a scientific assessment of the future evolution of a volcanic system and its eruptive behavior. Some consider the onus should be on volcanologists to provide simple but emphatic deterministic forecasts. This traditional way of thinking, however, does not deal with the implications of inherent uncertainties, both aleatoric and epistemic, that are inevitably present in observations, monitoring data, and interpretation of any natural system. In contrast to deterministic predictions, probabilistic eruption forecasting attempts to quantify these inherent uncertainties utilizing all available information to the extent that it can be relied upon and is informative. As with many other natural hazards, probabilistic eruption forecasting is becoming established as the primary scientific basis for planning rational risk mitigation actions: at short-term (hours to weeks or months), it allows decision-makers to prioritize actions in a crisis; and at long-term (years to decades), it is the basic component for land use and emergency planning. Probabilistic eruption forecasting consists of estimating the probability of an eruption event and where it sits in a complex multidimensional time--space--magnitude framework. In this review, we discuss the key developments and features of models that have been used to address the problem.",
+issn="1432-0819",
+doi="10.1007/s00445-012-0633-x",
+url="https://doi.org/10.1007/s00445-012-0633-x"
+}
+
+@article{Ortiz2003,
+title = "Villarrica volcano (Chile): characteristics of the volcanic tremor and forecasting of small explosions by means of a material failure method",
+journal = "Journal of Volcanology and Geothermal Research",
+volume = "128",
+number = "1",
+pages = "247 - 259",
+year = "2003",
+note = "Putting Volcano Seismology in a Physical Context. In memory of Bruno Martinelli",
+issn = "0377-0273",
+doi = "https://doi.org/10.1016/S0377-0273(03)00258-0",
+url = "http://www.sciencedirect.com/science/article/pii/S0377027303002580",
+author = "R. Ortiz and H. Moreno and A. Garc\'ia and G. Fuentealba and M. Astiz and P. Pena and N. S\'anchez and M. T\'arraga",
+keywords = "Villarrica volcano, volcanic tremor, eruption forecasting, material failure forecast method, rectified diffusion"
+}
+
+@Article{Selva2012,
+author="Selva, Jacopo
+and Orsi, Giovanni
+and Di Vito, Mauro Antonio
+and Marzocchi, Warner
+and Sandri, Laura",
+title="Probability hazard map for future vent opening at the Campi Flegrei caldera, Italy",
+journal="Bulletin of Volcanology",
+year="2012",
+month="Mar",
+day="01",
+volume="74",
+number="2",
+pages="497--510",
+abstract="The Campi Flegrei caldera is a restless structure affected by general subsidence and ongoing resurgence of its central part. The persistent activity of the system and the explosive character of the volcanism lead to a very high volcanic hazard that, combined with intense urbanization, corresponds to a very high volcanic risk. One of the largest sources of uncertainty in volcanic hazard/risk assessment for Campi Flegrei is the spatial location of the future volcanic activity. This paper presents and discusses a long-term probability hazard map for vent opening in case of renewal of volcanism at the Campi Flegrei caldera, which shows the spatial conditional probability for the next vent opening, given that an eruption occurs. The map has been constructed by building a Bayesian inference scheme merging prior information and past data. The method allows both aleatory and epistemic uncertainties to be evaluated. The probability map of vent opening shows that two areas of relatively high probability are present within the active portion of the caldera, with a probability approximately doubled with respect to the rest of the caldera. The map has an immediate use in evaluating the areas of the caldera prone to the highest volcanic hazard. Furthermore, it represents an important ingredient in addressing the more general problem of quantitative volcanic hazards assessment at the Campi Flegrei caldera.",
+issn="1432-0819",
+doi="10.1007/s00445-011-0528-2",
+url="https://doi.org/10.1007/s00445-011-0528-2"
+}
+
+@article{Smith2009,
+title = "Fracturing of volcanic systems: Experimental insights into pre-eruptive conditions",
+journal = "Earth and Planetary Science Letters",
+volume = "280",
+number = "1",
+pages = "211 - 219",
+year = "2009",
+issn = "0012-821X",
+doi = "https://doi.org/10.1016/j.epsl.2009.01.032",
+url = "http://www.sciencedirect.com/science/article/pii/S0012821X09000582",
+author = "Rosanna Smith and Peter R. Sammonds and Christopher R.J. Kilburn",
+keywords = "rock mechanics, high temperature fracture, andesite, eruption forecast, VT earthquakes"
+}
+
+@article{Smith2010,
+title = "Forecasting eruptions after long repose intervals from accelerating rates of rock fracture: The June 1991 eruption of Mount Pinatubo, Philippines",
+journal = "Journal of Volcanology and Geothermal Research",
+volume = "191",
+number = "1",
+pages = "129 - 136",
+year = "2010",
+issn = "0377-0273",
+doi = "https://doi.org/10.1016/j.jvolgeores.2010.01.006",
+url = "http://www.sciencedirect.com/science/article/pii/S037702731000020X",
+author = "R. Smith and C.R.J. Kilburn",
+keywords = "volcano-tectonic earthquake, eruption forecast, rock fracture, eruption precursor, magma conduit"
+}
+
+
+@article{Voight1989,
+ ISSN = {00368075, 10959203},
+ URL = {http://www.jstor.org/stable/1702921},
+ abstract = {The simple relation $\dot{\Omega}^{-\alpha}\ddot{\Omega}$ - A = 0, where O is a measurable quantity such as strain and A and a are empirical constants, describes the behavior of materials in terminal stages of failure under conditions of approximately constant stress and temperature. Applicable to metals and alloys, ice, concrete, polymers, rock, and soil, the relation may be extended to conditions of variable and multiaxial stress and may be used to predict time to failure.},
+ author = {Barry Voight},
+ journal = {Science},
+ number = {4888},
+ pages = {200-203},
+ publisher = {American Association for the Advancement of Science},
+ title = {A Relation to Describe Rate-Dependent Material Failure},
+ volume = {243},
+ year = {1989}
+}
+
+@article{Voight1991,
+author={Voight, Barry and Cornelius, Reinold R.},
+title={Prospects for eruption prediction in near real-time},
+journal={Nature},
+year={1991},
+volume={350},
+pages={695-698},
+url={http://dx.doi.org/10.1038/350695a0}
+}
+
+@article {Voight1998,
+author = {Voight, B. and Hoblitt, R. P. and Clarke, A. B. and Lockhart, A. B. and Miller, A. D. and Lynch, L. and McMahon, J.},
+title = {Remarkable cyclic ground deformation monitored in real-time on Montserrat, and its use in eruption forecasting},
+journal = {Geophysical Research Letters},
+volume = {25},
+number = {18},
+issn = {1944-8007},
+url = {http://dx.doi.org/10.1029/98GL01160},
+doi = {10.1029/98GL01160},
+pages = {3405--3408},
+keywords = {Seismology: Volcano seismology, Volcanology, Volcanology: Eruption mechanisms},
+year = {1998},
+}
+
+@article{Voight2000,
+title = "Deformation and seismic precursors to dome-collapse and fountain-collapse nu\'ees ardentes at Merapi Volcano, Java, Indonesia, 1994-1998",
+journal = "Journal of Volcanology and Geothermal Research",
+volume = "100",
+number = "1",
+pages = "261 - 287",
+year = "2000",
+issn = "0377-0273",
+doi = "https://doi.org/10.1016/S0377-0273(00)00140-2",
+url = "http://www.sciencedirect.com/science/article/pii/S0377027300001402",
+author = "B Voight and K.D Young and D Hidayat and  Subandrio and M.A Purbawinata and A Ratdomopurbo and  Suharna and  Panut and D.S Sayudi and R LaHusen and J Marso and T.L Murray and M Dejean and M Iguchi and K Ishihara",
+keywords = "Merapi, lava dome eruption, nu\'ees ardentes, pyroclastic flows, dome-collapse, fountain-collapse, volcanic earthquakes, eruption precursors, eruption forecasting, hazard mitigation"
+}
+
+@article{Bebbington2013,
+title = "Assessing spatio-temporal eruption forecasts in a monogenetic volcanic field",
+journal = "Journal of Volcanology and Geothermal Research",
+volume = "252",
+number = "Supplement C",
+pages = "14 - 28",
+year = "2013",
+issn = "0377-0273",
+doi = "https://doi.org/10.1016/j.jvolgeores.2012.11.010",
+url = "http://www.sciencedirect.com/science/article/pii/S037702731200340X",
+author = "Mark S. Bebbington",
+keywords = "Volcanic hazard, Probabilistic forecasting, Kernel density estimation, Renewal model, Auckland Volcanic Field"
+}
+
+@article {Bevilacqua2015,
+author = {Bevilacqua, Andrea and Isaia, Roberto and Neri, Augusto and Vitale, Stefano and Aspinall, Willy P. and Bisson, Marina and Flandoli, Franco and Baxter, Peter J. and Bertagnini, Antonella and Esposti Ongaro, Tomaso and Iannuzzi, Enrico and Pistolesi, Marco and Rosi, Mauro},
+title = {Quantifying volcanic hazard at Campi Flegrei caldera (Italy) with uncertainty assessment: 1. Vent opening maps},
+journal = {Journal of Geophysical Research: Solid Earth},
+volume = {120},
+number = {4},
+issn = {2169-9356},
+url = {http://dx.doi.org/10.1002/2014JB011775},
+doi = {10.1002/2014JB011775},
+pages = {2309--2329},
+keywords = {Spatial modeling, Volcanic hazards and risks, Explosive volcanism, Eruption mechanisms and flow emplacement, Calderas, vent opening map, probability map, uncertainty quantification, caldera, Campi Flegrei (Italy)},
+year = {2015},
+note = {2014JB011775},
+}
+
+@article{Bevilacqua2017a,
+  title={Bayesian construction of a long-term vent opening map in the Long Valley volcanic region, (CA, USA)},
+  author={Bevilacqua, Andrea and Marcus, Bursik and Abani, Patra and E. Bruce, Pitman and Ryan, Till},
+  journal={Statistics in Volcanology},
+  volume={3},
+  number={1},
+  pages={1-36},
+  year={2017},
+  url={http://dx.doi.org/10.5038/2163-338X.3.1}
+}
+
+@article{Bevilacqua2017b,
+author={Bevilacqua, Andrea and Neri, Augusto and Bisson, Marina and Esposti Ongaro, Tomaso and Flandoli, Franco and Isaia, Roberto and Rosi, Mauro and Vitale, Stefano},
+title={The Effects of Vent Location, Event Scale, and Time Forecasts on Pyroclastic Density Current Hazard Maps at Campi Flegrei Caldera (Italy)},
+journal={Frontiers in Earth Science},
+volume={5},
+pages={72},
+year={2017},
+url={https://www.frontiersin.org/article/10.3389/feart.2017.00072},
+doi={10.3389/feart.2017.00072},
+ISSN={2296-6463},
+abstract={This study presents a new method for producing long-term hazard maps for pyroclastic density currents (PDC) originating at Campi Flegrei caldera. Such method is based on a doubly stochastic approach and is able to combine the uncertainty assessments on the spatial location of the volcanic vent, the size of the flow and the expected time of such an event. The results are obtained by using a Monte Carlo approach and adopting a simplified invasion model based on the box model integral approximation. Temporal assessments are modelled through a Cox-type process including self-excitement effects, based on the eruptive record of the last 15 kyr. Mean and percentile maps of PDC invasion probability are produced, exploring their sensitivity to some sources of uncertainty and to the effects of the dependence between PDC scales and the caldera sector where they originated. Conditional maps representative of PDC originating inside limited zones of the caldera, or of PDC with a limited range of scales are also produced. Finally, the effect of assuming different time windows for the hazard estimates is explored, also including the potential occurrence of a sequence of multiple events. Assuming that the last eruption of Monte Nuovo (A.D. 1538) marked the beginning of a new epoch of activity similar to the previous ones, results of the statistical analysis indicate a mean probability of PDC invasion above 5% in the next 50 years on almost the entire caldera (with a probability peak of ~25% in the central part of the caldera). In contrast, probability values reduce by a factor of about 3 if the entire eruptive record is considered over the last 15 kyr, i.e. including both eruptive epochs and quiescent periods.}
+}
+
+
+@article {Neri2015,
+author = {Neri, Augusto and Bevilacqua, Andrea and Esposti Ongaro, Tomaso and Isaia, Roberto and Aspinall, Willy P. and Bisson, Marina and Flandoli, Franco and Baxter, Peter J. and Bertagnini, Antonella and Iannuzzi, Enrico and Orsucci, Simone and Pistolesi, Marco and Rosi, Mauro and Vitale, Stefano},
+title = {Quantifying volcanic hazard at Campi Flegrei caldera (Italy) with uncertainty assessment: 2. Pyroclastic density current invasion maps},
+journal = {Journal of Geophysical Research: Solid Earth},
+volume = {120},
+number = {4},
+issn = {2169-9356},
+url = {http://dx.doi.org/10.1002/2014JB011776},
+doi = {10.1002/2014JB011776},
+pages = {2330--2349},
+keywords = {Physical modeling, Volcanic hazards and risks, Explosive volcanism, Eruption mechanisms and flow emplacement, Calderas, pyroclastic density current, hazard map, uncertainty quantification, caldera, Campi Flegrei (Italy)},
+year = {2015},
+note = {2014JB011776},
+}
+
+@article {Tadini2017b,
+author = {Tadini, Alessandro and Bevilacqua, Andrea and Neri, Augusto and Cioni, Raffaello and
+Aspinall, Willy P. and Bisson, Marina and Isaia, Roberto and Mazzarini, Francesco and Valentine, Gregory A. and Vitale, Stefano and Baxter, P. J. and Bertagnini, A. and Cerminara, M. and de Michieli Vitturi, M. and Di Roberto, A. and Engwell, S. and Esposti Ongaro, T. and Flandoli, F. and Pistolesi, M.},
+title = {Assessing future vent opening locations at the Somma-Vesuvio volcanic complex: 2. Probability maps of the caldera for a future Plinian/sub-Plinian event with uncertainty quantification},
+journal = {Journal of Geophysical Research: Solid Earth},
+volume = {122},
+number = {6},
+issn = {2169-9356},
+url = {http://dx.doi.org/10.1002/2016JB013860},
+doi = {10.1002/2016JB013860},
+pages = {4357--4376},
+keywords = {Spatial analysis and representation, Geological, Statistical analysis, Volcanic hazards and risks, Explosive volcanism, Somma-Vesuvio, geodatabase, vent opening, spatial uncertainty, hazard assessment},
+year = {2017},
+note = {2016JB013860},
+}
+
+
+
+@inproceedings {Voight1987,
+author = {Voight, Barry},
+title = {Phenomenological law enables accurate time forecasts of slope failure},
+booktitle = {Int. Soc. Rock Mechanics, 7th International Congress of Rock Mechanics, Montreal},
+year = {1987}
+}
+
+@inproceedings {Voight1988b,
+author = {Voight, Barry},
+title = {Material science law applies to time forecasts of slope failure},
+booktitle = {5th International Symposium on Landslides, Lausanne},
+year = {1988}
+}
+
+@inproceedings {Voight1989b,
+author = {Voight, Barry and Orkan, Nebil and Young, Kirby},
+title = {Deformation and failure-time prediction in rock mechanics},
+booktitle = {Rock Mechanics as a Guide for Efficient Utilization of Natural Resources},
+year = {1989}
+}
+
+@article{Cornelius1994,
+  title={Seismological aspects of the 1989-1990 eruption at Redoubt Volcano, Alaska: the Materials Failure Forecast Method (FFM) with RSAM and SSAM seismic data},
+  author={Cornelius, R. and Voight, B.},
+  journal={Journal of Volcanology and Geothermal Research},
+  volume={62},
+  pages={469-498},
+  year={1994}
+}
+
+@inproceedings{Cornelius1996,
+  title={Real time seismic amplitude measurement (RSAM) and seismic spectral amplitude measurement (SSAM) analyses with the material failure forecast method (FFM), June 1991 explosive eruption at Mount Pinatubo},
+  author={Cornelius, R. and Voight, B.},
+  booktitle = {Geophysical Unrest},
+  year = {1996}
+}
+
+@inbook{Sparks2004,
+  title={Volcanic activity: Frontiers and challenges in forecasting, prediction and risk assessment},
+  author={Sparks, R.S.J. and Aspinall W.P.},
+  booktitle = {The State of the Planet: Frontiers and Challenges in Geophysics},
+  volume = {19},
+  series = {Geophysical Monograph 150},
+  pages={359-373},
+  publisher = {IUGG},
+  year = {2004}
+}
+
+@article {Bevilacqua2016b,
+author = {Bevilacqua, Andrea and Flandoli, Franco and Neri, Augusto and Isaia, Roberto and Vitale, Stefano},
+title = {Temporal models for the episodic volcanism of Campi Flegrei caldera (Italy) with uncertainty quantification},
+journal = {Journal of Geophysical Research: Solid Earth},
+volume = {121},
+number = {11},
+issn = {2169-9356},
+url = {http://dx.doi.org/10.1002/2016JB013171},
+doi = {10.1002/2016JB013171},
+pages = {7821--7845},
+keywords = {Probabilistic forecasting, Stochastic processes, Uncertainty quantification, Scaling: spatial and temporal, Calderas, Tephrochronology, episodic volcanism, long-term temporal model, uncertainty quantification, point processes, Campi Flegrei (Italy)},
+year = {2016},
+note = {2016JB013171},
+}
+
+@article {Tadini2017a,
+author = {Tadini, Alessandro and Bisson, Marina and Neri, Augusto and Cioni, Raffaello and Bevilacqua, Andrea and Aspinall, Willy P.},
+title = {Assessing future vent opening locations at the Somma-Vesuvio volcanic complex: 1. A new information geodatabase with uncertainty characterizations},
+journal = {Journal of Geophysical Research: Solid Earth},
+volume = {122},
+number = {6},
+issn = {2169-9356},
+url = {http://dx.doi.org/10.1002/2016JB013858},
+doi = {10.1002/2016JB013858},
+pages = {4336--4356},
+keywords = {Spatial analysis and representation, Geological, Statistical analysis, Volcanic hazards and risks, Explosive volcanism, Somma-Vesuvio, geodatabase, vent opening, spatial uncertainty, hazard assessment},
+year = {2017},
+note = {2016JB013858},
+}
+
+@article {Richardson2017,
+author = {Richardson, J.A. and Wilson, J.A and Connor, C.B. and Bleacher, J.E. and Kiyosugi, K.},
+title = {{Recurrence rate and magma effusion rate for the latest volcanism on Arsia Mons, Mars}},
+journal = {Earth and Planetary Science Letters},
+volume = {458},
+pages = {170-178},
+year = {2017},
+}
+
+@article {Bevilacqua2018,
+author = {Bevilacqua, A. and Bursik, M. and Patra, A. and Pitman, E.B. and Qingyuan, Y. and Sangani, R. and Kobs-Nawotniak, S.},
+title = {{Late Quaternary eruption record and probability of future volcanic eruptions in the Long Valley volcanic region (CA, USA)}},
+journal = {Journal of Geophysical Research: Solid Earth},
+volume = {in press},
+doi = {10.1002/2018JB015644},
+year = {2018},
+}
