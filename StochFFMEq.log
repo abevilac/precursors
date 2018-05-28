@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 MAY 2018 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 MAY 2018 18:55
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -302,7 +302,6 @@ File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
 Package hyperref Info: Hyper figures OFF on input line 4443.
 Package hyperref Info: Link nesting OFF on input line 4448.
 Package hyperref Info: Hyper index ON on input line 4451.
@@ -320,7 +319,7 @@ Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
 Package hyperref Info: backreferencing OFF on input line 6310.
-Package hyperref Info: Link coloring ON on input line 6313.
+Package hyperref Info: Link coloring OFF on input line 6315.
 Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
@@ -383,20 +382,20 @@ Package: threeparttable 2003/06/13  v 3.0
  (./StochFFMEq.aux)
 \openout1 = `StochFFMEq.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -427,7 +426,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring ON on input line 36.
+Package hyperref Info: Link coloring OFF on input line 37.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -437,9 +436,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count136
 )
-LaTeX Info: Redefining \ref on input line 36.
-LaTeX Info: Redefining \pageref on input line 36.
-LaTeX Info: Redefining \nameref on input line 36.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
 
 (./StochFFMEq.out) (./StochFFMEq.out)
 \@outlinefile=\write3
@@ -449,24 +448,24 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 53.
+LaTeX Font Info:    Try loading font information for U+msa on input line 54.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 53.
+LaTeX Font Info:    Try loading font information for U+msb on input line 54.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 53.
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 54.
 
-LaTeX Font Info:    No file OMScmtt.fd. on input line 53.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 54.
 
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 53.
+(Font)              for symbol `textbraceleft' on input line 54.
 
 (./StochFFMEq.toc)
 \tf@toc=\write4
@@ -479,154 +478,154 @@ g1_plus.png, id=185, 583.9416pt x 771.3618pt>
 File: Fig1_plus.png Graphic file (type png)
 
 <use Fig1_plus.png>
-Package pdftex.def Info: Fig1_plus.png used on input line 110.
+Package pdftex.def Info: Fig1_plus.png used on input line 114.
 (pdftex.def)             Requested size: 399.29463pt x 527.44983pt.
  [3] [4 <./Fig1_plus.png>]
 <Fig2_plus.png, id=216, 597.6729pt x 845.3181pt>
 File: Fig2_plus.png Graphic file (type png)
  <use Fig2_plus.png>
-Package pdftex.def Info: Fig2_plus.png used on input line 147.
+Package pdftex.def Info: Fig2_plus.png used on input line 151.
 (pdftex.def)             Requested size: 399.29463pt x 564.74788pt.
  [5]
 [6 <./Fig2_plus.png>] <Fig3_plus.png, id=233, 827.9733pt x 410.0118pt>
 File: Fig3_plus.png Graphic file (type png)
 
 <use Fig3_plus.png>
-Package pdftex.def Info: Fig3_plus.png used on input line 171.
+Package pdftex.def Info: Fig3_plus.png used on input line 175.
 (pdftex.def)             Requested size: 399.29463pt x 197.72934pt.
  [7 <./Fig3_plus.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 180.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 184.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 180.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 184.
 
 <Fig5_plus.png, id=260, 597.6729pt x 845.3181pt>
 File: Fig5_plus.png Graphic file (type png)
  <use Fig5_plus.png>
-Package pdftex.def Info: Fig5_plus.png used on input line 204.
+Package pdftex.def Info: Fig5_plus.png used on input line 210.
 (pdftex.def)             Requested size: 399.29463pt x 564.74788pt.
  [8]
 <Fig6_plus.png, id=268, 597.6729pt x 845.3181pt>
 File: Fig6_plus.png Graphic file (type png)
  <use Fig6_plus.png>
-Package pdftex.def Info: Fig6_plus.png used on input line 211.
+Package pdftex.def Info: Fig6_plus.png used on input line 217.
 (pdftex.def)             Requested size: 399.29463pt x 564.74788pt.
  [9 <./Fig5_plus.png>] <Fig7_plus.png, id=273, 597.6729pt x 845.3181pt>
 File: Fig7_plus.png Graphic file (type png)
 
 <use Fig7_plus.png>
-Package pdftex.def Info: Fig7_plus.png used on input line 218.
+Package pdftex.def Info: Fig7_plus.png used on input line 224.
 (pdftex.def)             Requested size: 399.29463pt x 564.74788pt.
  [10 <./Fig6_plus.png>] [11 <./Fig7_plus.png>] [12]
 <Fig13_new.png, id=290, 584.9052pt x 804.606pt>
 File: Fig13_new.png Graphic file (type png)
  <use Fig13_new.png>
-Package pdftex.def Info: Fig13_new.png used on input line 256.
+Package pdftex.def Info: Fig13_new.png used on input line 262.
 (pdftex.def)             Requested size: 399.29463pt x 549.29793pt.
  [13]
 <Fig8_9new.png, id=300, 584.9052pt x 804.606pt>
 File: Fig8_9new.png Graphic file (type png)
  <use Fig8_9new.png>
-Package pdftex.def Info: Fig8_9new.png used on input line 263.
+Package pdftex.def Info: Fig8_9new.png used on input line 269.
 (pdftex.def)             Requested size: 399.29463pt x 549.29793pt.
  [14 <./Fig13_new.png>] <Fig10_11new.png, id=305, 584.9052pt x 804.606pt>
 File: Fig10_11new.png Graphic file (type png)
 
 <use Fig10_11new.png>
-Package pdftex.def Info: Fig10_11new.png used on input line 270.
+Package pdftex.def Info: Fig10_11new.png used on input line 276.
 (pdftex.def)             Requested size: 399.29463pt x 549.29793pt.
  [15 <./Fig8_9new.png>] [16 <./Fig10_11new.png>]
 <Fig15_plus.png, id=315, 788.4657pt x 434.5836pt>
 File: Fig15_plus.png Graphic file (type png)
  <use Fig15_plus.png>
-Package pdftex.def Info: Fig15_plus.png used on input line 280.
+Package pdftex.def Info: Fig15_plus.png used on input line 286.
 (pdftex.def)             Requested size: 399.29463pt x 220.083pt.
 
 <Fig16_plus.png, id=317, 837.3684pt x 416.9979pt>
 File: Fig16_plus.png Graphic file (type png)
  <use Fig16_plus.png>
-Package pdftex.def Info: Fig16_plus.png used on input line 289.
+Package pdftex.def Info: Fig16_plus.png used on input line 295.
 (pdftex.def)             Requested size: 399.29463pt x 198.84596pt.
  [17 <./Fig15_plus.png>] [18 <./Fig16_plus.png>]
-
-LaTeX Warning: File `Fig4_plus.pdf' not found on input line 307.
-
-
-! Package pdftex.def Error: File `Fig4_plus.pdf' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.307 ...hics[width=0.85\textwidth]{Fig4_plus.pdf}
-                                                  
-? 
-[19] [20] <Fig12_plus.png, id=361, 585.8688pt x 562.2606pt>
+<Fig4_plus.png, id=337, 590.6868pt x 551.9019pt>
+File: Fig4_plus.png Graphic file (type png)
+ <use Fig4_plus.png>
+Package pdftex.def Info: Fig4_plus.png used on input line 318.
+(pdftex.def)             Requested size: 399.29463pt x 373.09036pt.
+ [19 <./Fig4_plus.png>] [20] <Fig12_plus.png, id=363, 585.8688pt x 562.2606pt>
 File: Fig12_plus.png Graphic file (type png)
 
 <use Fig12_plus.png>
-Package pdftex.def Info: Fig12_plus.png used on input line 336.
+Package pdftex.def Info: Fig12_plus.png used on input line 347.
 (pdftex.def)             Requested size: 399.29463pt x 383.21584pt.
  (./StochFFMEq.bbl [21 <./Fig12_plus.png>]
 Missing character: There is no – in font cmr9!
  [22])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 343.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 353.
  [23]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 343.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 353.
 
 (./StochFFMEq.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 343.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 343.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 353.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 353.
 Package rerunfilecheck Info: File `StochFFMEq.out' has not changed.
 (rerunfilecheck)             Checksum: 9B3BD751D59FE28BF01B309253009660;615.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 343.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 353.
  ) 
 Here is how much of TeX's memory you used:
- 8883 strings out of 493089
- 132758 string characters out of 6134842
- 229754 words of memory out of 5000000
- 12115 multiletter control sequences out of 15000+600000
- 20216 words of font info for 75 fonts, out of 8000000 for 9000
+ 8888 strings out of 493089
+ 132857 string characters out of 6134842
+ 229744 words of memory out of 5000000
+ 12118 multiletter control sequences out of 15000+600000
+ 20048 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,41p,1328b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2015/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on StochFFMEq.pdf (23 pages, 2059583 bytes).
+ 42i,11n,41p,1326b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{figure.caption.17} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.13} has been referenced but does not
+ exist, replaced by a fixed one
+
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on StochFFMEq.pdf (23 pages, 2153536 bytes).
 PDF statistics:
  482 PDF objects out of 1000 (max. 8388607)
  412 compressed objects within 5 object streams
- 91 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 94 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
