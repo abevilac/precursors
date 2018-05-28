@@ -187,7 +187,7 @@ In the following all these parameters are assumed to be positive, and $\alpha > 
 
 Several methods have been adopted in the determination of the parameters in the ODE problem \citep{Voight1988, Cornelius1995, Bell2011}. The Log-rate versus Log-acceleration Technique (LLT), and the Hindsight Technique (HT) can both provide estimates of $\alpha$. They are described in Appendix \ref{A-1}. The first technique is generally less accurate because needs an estimate of the time derivative of the observations. The second technique requires that we know $t_e$ and hence can only be used in retrospective analysis (hindcasting problems). In our formulation we use these methods in the estimation of $\alpha$. The ODE represents the mean path of the SDE, and we approximate its curvature from the available observations.
 
-If $\alpha$ is given, a linearized least square method (LLSM) can be applied to fit parameter $A$ and $\hat\eta(t_0))$ on the inverse plot $1/X$. This is the main method classically adopted as a forecasting technique in the ODE problem (see Appendix \ref{A-1}). We fit the stochastic parameters $\sigma$ and $\gamma$ from the residuals of this linearized problem. In particular, we impose the constant $K=\frac{\sigma^2}{2\gamma}$ to be equal to the variance of the residuals. In summary, we plug-in $\alpha$ from classical LLT or HT in the LLSM, and then we obtain $\left(A,\hat\eta(t_0),K\right)$ as required to the SDE definition. 
+If $\alpha$ is given, a linearized least square method (LLSM) can be applied to fit parameter $A$ and $\hat\eta(t_0))$ on the inverse plot $1/X$. This is the main method classically adopted as a forecasting technique in the ODE problem (see Appendix \ref{A-1}). We fit the stochastic parameters $\sigma$ and $\gamma$ from the residuals of this linearized problem. In particular, we impose the constant $K=\frac{\sigma^2}{2\gamma}$ to be equal to the variance of the residuals. In summary, we plug-in $\alpha$ from classical LLT or HT in the LLSM, and then we obtain $\left(A,\hat\eta(t_0),K\right)$ as required to the SDE definition.
 
 We apply three different forecast methods on the datasets in \cite{Voight1988}, and we test $t_f$ as an estimator of $t_e$. In all our methods $t_f$ is assumed as a random variable, and its pdf
 $$g_{t_f}:\mathbb R\rightarrow \mathbb R+,\quad \int_0^\infty g_{t_f}(x) dx=1$$
@@ -304,7 +304,7 @@ In the ODE problem, regressive models can be applied on different formulations o
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth]{Fig4_plus.pdf}
+\includegraphics[width=0.85\textwidth]{Fig4_plus.png}
 \vskip-0.5cm\caption{Methods LLT and HT applied to (a,b) St. Helens and (c,d) Bezymyanny\&Mt. Toc datasets. Different colors correspond to different data. Dashed lines bound the $90\%$ confidence interval of the regression line. Figure modified from \cite{Voight1988}.}
 \label{Fig4}
 \end{figure}

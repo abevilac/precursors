@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.10.17)  25 MAY 2018 14:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.10.17)  28 MAY 2018 12:24
 entering extended mode
 **./StochFFMEq.tex
 (StochFFMEq.tex
@@ -556,30 +556,27 @@ Package pdftex.def Info: Fig16_plus.png  used on input line 289. on input line
 Package pdftex.def Info: Requested size: 399.29463pt x 198.84596pt on input lin
 e 289.
  [17 <./Fig15_plus.png>] [18 <./Fig16_plus.png>]
-
-pdfTeX warning: pdflatex.exe (file ./Fig4_plus.pdf): PDF inclusion: found PDF v
-ersion <1.6>, but at most version <1.5> allowed
-<Fig4_plus.pdf, id=333, pagebox=cropbox, 590.56548pt x 551.76237pt>
-File: Fig4_plus.pdf Graphic file (type pdf)
-<use Fig4_plus.pdf>
-Package pdftex.def Info: Fig4_plus.pdf  used on input line 307. on input line 3
+<Fig4_plus.png, id=333, 590.6868pt x 551.9019pt>
+File: Fig4_plus.png Graphic file (type png)
+<use Fig4_plus.png>
+Package pdftex.def Info: Fig4_plus.png  used on input line 307. on input line 3
 07.
-Package pdftex.def Info: Requested size: 399.29463pt x 373.05498pt on input lin
+Package pdftex.def Info: Requested size: 399.29463pt x 373.09036pt on input lin
 e 307.
-[19 <./Fig4_plus.pdf>] [20]
-<Fig12_plus.png, id=390, 585.8688pt x 562.2606pt>
+ [19 <./Fig4_plus.png>] [20]
+<Fig12_plus.png, id=358, 585.8688pt x 562.2606pt>
 File: Fig12_plus.png Graphic file (type png)
 <use Fig12_plus.png>
 Package pdftex.def Info: Fig12_plus.png  used on input line 336. on input line 
 336.
 Package pdftex.def Info: Requested size: 399.29463pt x 383.21584pt on input lin
 e 336.
- (StochFFMEq.bbl [21 <./Fig12_plus.png>]
+ (StochFFMEq.bbl
+[21 <./Fig12_plus.png>]
 Missing character: There is no – in font cmr9!
  [22])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 343.
-
-[23]
+ [23]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 343.
  (StochFFMEq.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 343.
@@ -594,7 +591,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 343.
  ) 
 Here is how much of TeX's memory you used:
  8884 strings out of 493348
- 131946 string characters out of 3139574
+ 131922 string characters out of 3139574
  228426 words of memory out of 3000000
  12171 multiletter control sequences out of 15000+200000
  20048 words of font info for 74 fonts, out of 3000000 for 9000
@@ -623,9 +620,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX
 s/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb>
-Output written on StochFFMEq.pdf (23 pages, 2265856 bytes).
+Output written on StochFFMEq.pdf (23 pages, 2209021 bytes).
 PDF statistics:
- 505 PDF objects out of 1000 (max. 8388607)
+ 473 PDF objects out of 1000 (max. 8388607)
  91 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
