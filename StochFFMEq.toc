@@ -10,4 +10,4 @@
 \contentsline {paragraph}{Log-rate versus log-acceleration technique (LLT)}{19}{section*.15}
 \contentsline {paragraph}{Hindsight technique (HT)}{20}{section*.16}
 \contentsline {paragraph}{Linearized least-squares method (LLSM)}{20}{section*.17}
-\contentsline {section}{\numberline {B}Sensitivity analysis on the noise properties}{21}{appendix.B}
+\contentsline {section}{\numberline {B}Sensitivity analysis on the noise properties}{20}{appendix.B}
