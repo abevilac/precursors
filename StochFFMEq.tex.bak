@@ -41,7 +41,7 @@
 \author[3,4]{Abani K. Patra}
 \author[5]{Augusto Neri}
 
-\affil[1]{\textit{Dept. of Earth Sciences, University at Buffalo, Buffalo, NY} }
+\affil[1]{\textit{Dept. of Geology, University at Buffalo, Buffalo, NY} }
 \affil[2]{\textit{Dept. of Materials Design and Innovation, University at Buffalo, NY}}
 \affil[3]{\textit{Dept. of Mech. and  Aero. Eng., University at Buffalo, Buffalo, NY} }
 \affil[4]{\textit{Comp. Data Science and Eng., University at Buffalo, Buffalo, NY}}
@@ -63,7 +63,7 @@ where $X$ is the rate of the precursor signal, and $\alpha$, $A$ are model param
 
 The FFM equation was originally developed in landslide forecasting \citep{Voight1987, Voight1988b, Voight1989b}, and later applied in eruption forecasting \citep{Voight1988, Voight1989, Cornelius1995}. The method was retrospectively applied to several volcanic systems, including dome growth episodes and explosive volcanic eruptions \citep{Voight1991, Cornelius1994, Cornelius1996, Voight2000}. Volcanic tremor characteristics were studied with the FFM method and related to the seismic signals of the multi-scale rock cracking \citep{Kilburn1998,Ortiz2003,Kilburn2003}. Experimental and field studies of the physics behind the rate-increase of volcano-tectonic earthquakes are available \citep{Smith2009,Smith2010}. Generalized (power law) regression appeared to improve the accuracy of the forecasts \citep{Bell2011}. However, sometimes the method fails to predict the time of the eruption, and some volcanic systems are often characterized by prolonged unrest and ambiguous signals \citep{Chiodini2016}. A full probability assessment, including uncertainty quantification (UQ), is required, and it is the purpose of our investigations.
 
-In this study, we generalize the classical FFM approach by incorporating a stochastic noise in the original  ordinary differential equation (ODE) converting it into a stochastic differential equation (SDE), and systematically characterizing the uncertainty. Embedding noise in the model can enable the FFM equation to have greater forecasting skill by focusing on averages and moments. Sudden changes in the power law properties are indeed possible. In our model, the prediction is thus perturbed inside a range that can be tuned, producing probabilistic forecasts.
+In this study, we generalize the classical FFM approach by incorporating a stochastic noise in the original  ordinary differential equation (ODE) converting it into a stochastic differential equation (SDE), and systematically characterize the uncertainty. Embedding noise in the model can enable the FFM equation to have greater forecasting skill by focusing on averages and moments. Sudden changes in the power law properties are indeed possible. In our model, the prediction is thus perturbed inside a range that can be tuned, producing probabilistic forecasts. 
 
 In more detail, in the original equation the change of variables $\eta=X^{1-\alpha}$ implies:
 $$d\eta/dt=(1-\alpha)A,$$
@@ -105,7 +105,7 @@ and so:
 $$t_f-t=\frac{\eta(t)}{(\alpha-1)A}.$$
 We note that an estimate of $\eta(t)$ is thus necessary to make forecasts, a non-trivial process if noise is present.
 
-The effect of varying parameters $\alpha$ and $A$ in the equation \ref{eq2b} is displayed in Figure \ref{Fig1}a,b. Our purpose is to forecast the failure time $t_f:=\{t:X(t)^{-1}=0\}$ and hence it is more practical to examine the plot of $X^{-1}=\eta^{\frac{1}{\alpha-1}}$, shown in Fig.\ref{Fig1}b. The parameter $\alpha$ defines the convexity of that function - for $\alpha\le2$ it is convex, for $\alpha\ge2$ it is concave. The value $\alpha=2$ produces a straight line. We call it the {\it convexity} parameter.
+The effect of varying parameters $\alpha$ and $A$ on the equation \ref{eq2b} is displayed in Figure \ref{Fig1}a,b. Our purpose is to forecast the failure time $t_f:=\{t:X(t)^{-1}=0\}$ and hence it is more practical to examine the plot of $X^{-1}=\eta^{\frac{1}{\alpha-1}}$, shown in Fig.\ref{Fig1}b. The parameter $\alpha$ defines the convexity of that function - for $\alpha\le2$ it is convex, for $\alpha\ge2$ it is concave. The value $\alpha=2$ produces a straight line. We call it the {\it convexity} parameter.
 
 In equation \ref{eq2a} the parameter $A$ changes the time scale of the equation, and so defines the constant slope of $\eta$, that is $-A$. Hence we call it the {\it slope} parameter.
 
@@ -200,7 +200,7 @@ is estimated following a classical Gaussian kde method (Silverman Rule).
 \begin{itemize}
 \item Method 1 is based on the classical ODE, and the corresponding forecasts are displayed in Figure \ref{Fig5}. This is consistent with the original formulation in \cite{Voight1988}. $g_{t_f}$ depends on the statistical uncertainty affecting the pair $(A, \hat\eta(t_0))$ in the regression method. We implement this \emph{model uncertainty} as a bivariate Gaussian in a Monte Carlo of 5,000 samples.
 
-Methods 2 and 3 are both based on the new SDE.
+Methods 2 and 3 are both based on the new SDE. 
 \item In Method 2, the least-square curve is assumed to be the mean solution, and $g_{t_f}$ is defined by the noise. The forecasts are displayed in Figure \ref{Fig6}. We implement this \emph{aleatory uncertainty} in a Monte Carlo of 5,000 sample paths of the stochastic noise.
 
 \item Method 3 is \emph{doubly stochastic} (e.g. \cite{Bevilacqua2016}). The mean solution is affected first by the statistical uncertainty in the regression method, and then perturbed by the stochastic noise. The values of $g_{t_f}$ are thus reported as 5$^{th}$ percentile, mean, and 95$^{th}$ percentile curves. We remark that the two uncertainties are not independent, because the properties of the noise are related to the residuals in the linearized problem. The forecasts are displayed in Figure \ref{Fig7}. In this case, the mean pdf is based on a Monte Carlo sampling consisting of 10,000 model runs, while the percentile values are based on a hierarchical Monte Carlo of a variable number of samples. This number is tuned according to the different convergence rates observed, but is always above $200\times300=6e5$ samples.
@@ -208,21 +208,21 @@ Methods 2 and 3 are both based on the new SDE.
 \begin{figure}[H]\vskip-0.5cm
 \centering
 \includegraphics[width=0.85\textwidth]{Fig5_plus.png}
-\caption{Estimators of $t_f$ based on Method 1. Blue lines assume $\alpha$ as from LLT, red as from HT. The bold line is $g_{t_f}$. Thin dashed lines bound the $90\%$ confidence interval of the ODE paths, and a thin continuous line is the mean path. A dashed black line marks $t_e$. Method 1 generally provides a good estimator of $t_e$, but often only the HT method allows these robust estimates.}
+\caption{Estimators of $t_f$ based on Method 1. Blue lines assume $\alpha$ as from LLT, red as from HT. The bold line is $g_{t_f}$. Thin dashed lines bound the $90\%$ confidence interval of the ODE paths, and a thin continuous line is the mean path. A dashed black line marks $t_e$.}
 \label{Fig5}
 \end{figure}
 
 \begin{figure}[H]\vskip-0.5cm
 \centering
 \includegraphics[width=0.85\textwidth]{Fig6_plus.png}
-\caption{Estimators of $t_f$ based on Method 2. Blue lines assume $\alpha$ as from LLT, red as from HT. A bold line is $g_{t_f}$. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the mean path. Thin dotted lines show examples of random paths. A dashed black line marks $t_e$. Method 2 reduces the overestimation issues of Method 1, but model uncertainty is neglected and the estimates can miss $t_e$.}
+\caption{Estimators of $t_f$ based on Method 2. Blue lines assume $\alpha$ as from LLT, red as from HT. A bold line is $g_{t_f}$. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the mean path. Thin dotted lines show examples of random paths. A dashed black line marks $t_e$.}
 \label{Fig6}
 \end{figure}
 
 \begin{figure}[H]\vskip-0.5cm
 \centering
 \includegraphics[width=0.85\textwidth]{Fig7_plus.png}
-\caption{Estimators of $t_f$ based on Method 3. Blue lines assume $\alpha$ as from LLT, red as from HT. A bold line is $g_{t_f}$, and bold dashed lines are its 5$^{th}$ and 95$^{th}$ percentile values. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the mean path. Thin dotted lines show examples of random paths. A dashed black line marks $t_e$. Method 3 enhances Method 2 and performs significantly better.}
+\caption{Estimators of $t_f$ based on Method 3. Blue lines assume $\alpha$ as from LLT, red as from HT. A bold line is $g_{t_f}$, and bold dashed lines are its 5$^{th}$ and 95$^{th}$ percentile values. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the mean path. Thin dotted lines show examples of random paths. A dashed black line marks $t_e$.}
 \label{Fig7}
 \end{figure}
 
@@ -288,7 +288,7 @@ We described three different methods for estimating $t_f$, the ODE-based Method 
 \label{Fig15}
 \end{figure}
 
-This features are confirmed and strengthened in the material failure likelihoods of the forecasting examples based on the moving windows. Figure \ref{Fig16} summarizes these likelihoods. Plot (a) compares Method 1 (black bars) and Method 2 (colored bars). In Mt. St. Helens, 1982 - line length (blue), Method 2 outperforms Method 1 only in the third time window, and it is the only likelihood above $10\%$. In Bezymyanny, 1960 - seismic strain (red), Method 2 outperforms Method 1 only in the first time window, and the likelihoods are all close to $5\%$. Plot (b) displays the likelihoods provided by the doubly stochastic Method 3. Full colored bars report the mean likelihood, shaded bars its 95$^{th}$ percentile values. In this case, mean likelihoods are very similar to those provided by Method 1, but slightly lower. The 95$^{th}$ percentile values are again significantly higher, around $5\%$ in the first and second time windows, and about $16\%$ and $12\%$ in the Mt. St. Helens and Bezyamyanny case studies, respectively.
+This features are confirmed by the material failure likelihoods in the forecasting examples based on the moving window. Figure \ref{Fig16} summarizes these likelihoods. Plot (a) compares Method 1 (black bars) and Method 2 (colored bars). In Mt. St. Helens, 1982 - line length (blue), Method 2 outperforms Method 1 only in the third time window, and it is the only likelihood above $10\%$. In Bezymyanny, 1960 - seismic strain (red), Method 2 outperforms Method 1 only in the first time window, and the likelihoods are all close to $5\%$. Plot (b) displays the likelihoods provided by the doubly stochastic Method 3. Full colored bars report the mean likelihood, shaded bars its 95$^{th}$ percentile values. In this case, mean likelihoods are very similar to those provided by Method 1, but slightly lower. The 95$^{th}$ percentile values are again significantly higher, around $5\%$ in the first and second time windows, and about $16\%$ and $12\%$ in the Mt. St. Helens and Bezyamyanny case studies, respectively.
 
 \begin{figure}[H]
 \centering
@@ -306,7 +306,7 @@ The doubly stochastic formulation is particularly impacting in the forecasts bec
 
 \section*{Acknowledgements}
 
-We would like to thank Barry Voight for helpful discussions and inspiration. We would also like to acknowledge the support of NSF awards 1521855 and YYYY.
+We would like to thank Prof B. Voight for helpful discussions and inspiration. We would also like to acknowledge the support of NSF awards XXXX and YYYY.
 
 
 \appendix
