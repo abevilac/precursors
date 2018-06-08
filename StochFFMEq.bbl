@@ -13,11 +13,17 @@ Bell, A.~F., Naylor, M., Heap, M.~J., and Main, I.~G. (2011).
   An evaluation of the failure forecast method}.
 \newblock {\em Geophysical Research Letters}, 38(15):5.
 
+\bibitem[Bell et~al., 2013]{Bell2013}
+Bell, A.~F., Naylor, M., and Main, I.~G. (2013).
+\newblock {The limits of predictability of volcanic eruptions from accelerating
+  rates of earthquakes}.
+\newblock {\em Geophysical Journal International}, 194(3):1541--1553.
+
 \bibitem[Bevilacqua, 2016]{Bevilacqua2016}
 Bevilacqua, A. (2016).
 \newblock {\em {Doubly stochastic models for volcanic hazard assessment at
   Campi Flegrei caldera}}, volume~21 of {\em Theses}.
-\newblock Birkh\"auser/Springer.
+\newblock Edizioni della Normale, Birkh\"auser/Springer.
 
 \bibitem[Bevilacqua et~al., 2018]{Bevilacqua2018}
 Bevilacqua, A., Bursik, M., Patra, A., Pitman, E., Qingyuan, Y., Sangani, R.,
@@ -25,7 +31,13 @@ Bevilacqua, A., Bursik, M., Patra, A., Pitman, E., Qingyuan, Y., Sangani, R.,
 \newblock {Late Quaternary eruption record and probability of future volcanic
   eruptions in the Long Valley volcanic region (CA, USA)}.
 \newblock {\em Journal of Geophysical Research: Solid Earth}, in press.
-\newblock doi:10.1002/2018JB015644.
+\newblock doi:10.1029/2018JB015644.
+
+\bibitem[Bevilacqua et~al., 2017a]{Bevilacqua2017a}
+Bevilacqua, A., Bursik, M., Patra, A., Pitman, E., and Till, R. (2017a).
+\newblock {Bayesian construction of a long-term vent opening map in the Long
+  Valley volcanic region, (CA, USA)}.
+\newblock {\em Statistics in Volcanology}, 3(1):1--36.
 
 \bibitem[Bevilacqua et~al., 2016]{Bevilacqua2016b}
 Bevilacqua, A., Flandoli, F., Neri, A., Isaia, R., and Vitale, S. (2016).
@@ -43,18 +55,35 @@ Bevilacqua, A., Isaia, R., Neri, A., Vitale, S., Aspinall, W.~P., Bisson, M.,
 \newblock {\em Journal of Geophysical Research: Solid Earth},
   120(4):2309--2329.
 
-\bibitem[Bevilacqua et~al., 2017a]{Bevilacqua2017a}
-Bevilacqua, A., Marcus, B., Abani, P., E.~Bruce, P., and Ryan, T. (2017a).
-\newblock {Bayesian construction of a long-term vent opening map in the Long
-  Valley volcanic region, (CA, USA)}.
-\newblock {\em Statistics in Volcanology}, 3(1):1--36.
-
 \bibitem[Bevilacqua et~al., 2017b]{Bevilacqua2017b}
 Bevilacqua, A., Neri, A., Bisson, M., Esposti~Ongaro, T., Flandoli, F., Isaia,
   R., Rosi, M., and Vitale, S. (2017b).
 \newblock {The effects of vent location, event scale, and time forecasts on
   pyroclastic density current hazard maps at Campi Flegrei caldera (Italy)}.
 \newblock {\em Frontiers in Earth Science}, 5:72.
+
+\bibitem[Bou\'e et~al., 2015]{Boue2015}
+Bou\'e, A., Lesage, P., Cort\'es, G., Valette, B., and Reyes~D\'avila, G.
+  (2015).
+\newblock {Real-time eruption forecasting using the material Failure Forecast
+  Method with a Bayesian approach}.
+\newblock {\em Journal of Geophysical Research: Solid Earth},
+  120(4):2143--2161.
+
+\bibitem[Budi-Santoso et~al., 2013]{Budi2013}
+Budi-Santoso, A., Lesage, P., Dwiyono, S., Sumarti, S., Subandriyo, Surono,
+  Jousset, P., and Metaxian, J.-P. (2013).
+\newblock {Analysis of the seismic activity associated with the 2010 eruption
+  of Merapi Volcano, Java}.
+\newblock {\em Journal of Volcanology and Geothermal Research}, 261:153 -- 170.
+\newblock Merapi eruption.
+
+\bibitem[Chardot et~al., 2013]{Chardot2013}
+Chardot, L., Jolly, A.~D., Sherburn, S., Fournier, N., and Kennedy, B. (2013).
+\newblock {The material failure forecast method as a potential eruption
+  forecasting tool: application to the 2012 unrest episode at White Island
+  volcano, New Zealand}.
+\newblock In {\em IAVCEI 2013 Scientific Assembly, Kagoshima, Japan}.
 
 \bibitem[Chiodini et~al., 2016]{Chiodini2016}
 Chiodini, G., Paonita, A., Aiuppa, A., Costa, A., Caliro, S., De~Martino, P.,
@@ -83,10 +112,21 @@ Cornelius, R. and Voight, B. (1996).
   method (FFM), June 1991 explosive eruption at Mount Pinatubo}.
 \newblock In {\em Geophysical Unrest}.
 
+\bibitem[Fukuzuno, 1985]{Fukuzuno1985}
+Fukuzuno, T. (1985).
+\newblock {A method to predict the time of slope failure caused by rainfall
+  using the inverse number of velocity of surface displacement}.
+\newblock {\em Journal of Japanese Landslide Society}, 22:8 -- 14.
+
 \bibitem[Hull and White, 1990]{HullWhite1990}
 Hull, J. and White, A. (1990).
 \newblock {Pricing Interest Rate Derivatives Securities}.
 \newblock {\em The Review of Financial Studies}, 3:573–592.
+
+\bibitem[Karatzas and Shreve, 1991]{Karatzas1991}
+Karatzas, I. and Shreve, S.~E. (1991).
+\newblock {\em {Brownian Motion and Stochastic Calculus}}.
+\newblock Springer; Berlin, Heidelberg, New York.
 
 \bibitem[Kilburn, 2003]{Kilburn2003}
 Kilburn, C.~R. (2003).
@@ -100,10 +140,23 @@ Kilburn, C. R.~J. and Voight, B. (1998).
   Montserrat}.
 \newblock {\em Geophysical Research Letters}, 25(19):3665--3668.
 
+\bibitem[Lavall\'ee et~al., 2008]{Lavallee2008}
+Lavall\'ee, Y., Meredith, P.~G., Dingwell, D., Hess, K., Wassermann, J.,
+  Cordonnier, B., Gerik, A., and Kruhl, J.~H. (2008).
+\newblock {Seismogenic lavas and explosive eruption forecasting}.
+\newblock {\em Nature}, 453:507 -- 510.
+
 \bibitem[Marzocchi and Bebbington, 2012]{Marzocchi2012}
 Marzocchi, W. and Bebbington, M.~S. (2012).
 \newblock {Probabilistic eruption forecasting at short and long time scales}.
 \newblock {\em Bulletin of Volcanology}, 74(8):1777--1805.
+
+\bibitem[Moretto et~al., 2016]{Moretto2016}
+Moretto, S., Bozzano, F., Esposito, C., and Mazzanti, P. (2016).
+\newblock {Lesson learned from the pre-collapse time series of displacement of
+  the Preonzo landslide (Switzerland)}.
+\newblock {\em Rendiconti Online della Societ\'a Geologica Italiana}, 41:247 --
+  250.
 
 \bibitem[Neri et~al., 2015]{Neri2015}
 Neri, A., Bevilacqua, A., Esposti~Ongaro, T., Isaia, R., Aspinall, W.~P.,
@@ -127,6 +180,19 @@ Richardson, J., Wilson, J., Connor, C., Bleacher, J., and Kiyosugi, K. (2017).
 \newblock {Recurrence rate and magma effusion rate for the latest volcanism on
   Arsia Mons, Mars}.
 \newblock {\em Earth and Planetary Science Letters}, 458:170--178.
+
+\bibitem[Salvage and Neuberg, 2016]{Salvage2016}
+Salvage, R. and Neuberg, J. (2016).
+\newblock {Using a cross correlation technique to refine the accuracy of the
+  Failure Forecast Method: Application to Soufri\'ere Hills volcano,
+  Montserrat}.
+\newblock {\em Journal of Volcanology and Geothermal Research}, 324:118 -- 133.
+
+\bibitem[Salvage et~al., 2017]{Salvage2017}
+Salvage, R.~O., Karl, S., and Neuberg, J.~W. (2017).
+\newblock {\em {Volcano Seismology: Detecting Unrest in Wiggly Lines}}, pages
+  1--17.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg.
 
 \bibitem[Selva et~al., 2012]{Selva2012}
 Selva, J., Orsi, G., Di~Vito, M.~A., Marzocchi, W., and Sandri, L. (2012).
@@ -175,12 +241,25 @@ Tadini, A., Bisson, M., Neri, A., Cioni, R., Bevilacqua, A., and Aspinall,
 \newblock {\em Journal of Geophysical Research: Solid Earth},
   122(6):4336--4356.
 
+\bibitem[T{\'a}rraga et~al., 2006]{Tarraga2006}
+T{\'a}rraga, M., Carniel, R., Ortiz, R., Marrero, J.~M., and Garc{\'i}a, A.
+  (2006).
+\newblock {On the predictability of volcano-tectonic events by low frequency
+  seismic noise analysis at Teide-Pico Viejo volcanic complex, Canary Islands}.
+\newblock {\em {Natural Hazards and Earth System Science}}, 6(3):365--376.
+
+\bibitem[Vasseur et~al., 2015]{Vasseur2015}
+Vasseur, J., Wadsworth, F.~B., Lavall\'ee, Y., Bell, A.~F., and Main, I.~G.
+  (2015).
+\newblock {Heterogeneity: The key to failure forecasting}.
+\newblock {\em Scientific Reports}, 453:13259 -- 13265.
+
 \bibitem[Voight, 1987]{Voight1987}
 Voight, B. (1987).
 \newblock {Phenomenological law enables accurate time forecasts of slope
   failure}.
 \newblock In {\em Int. Soc. Rock Mechanics, 7th International Congress of Rock
-  Mechanics, Montreal}.
+  Mechanics, Montreal, Canada}.
 
 \bibitem[Voight, 1988a]{Voight1988}
 Voight, B. (1988a).
@@ -190,7 +269,8 @@ Voight, B. (1988a).
 \bibitem[Voight, 1988b]{Voight1988b}
 Voight, B. (1988b).
 \newblock {Material science law applies to time forecasts of slope failure}.
-\newblock In {\em 5th International Symposium on Landslides, Lausanne}.
+\newblock In {\em 5th International Symposium on Landslides, Lausanne,
+  Switzerland}.
 
 \bibitem[Voight, 1989]{Voight1989}
 Voight, B. (1989).

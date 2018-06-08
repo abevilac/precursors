@@ -16,12 +16,18 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\citation{Voight1987,Voight1988b,Voight1989b}
+\citation{Fukuzuno1985,Voight1987,Voight1988b,Voight1989b}
 \citation{Voight1988,Voight1989,Cornelius1995}
 \citation{Voight1991,Cornelius1994,Cornelius1996,Voight2000}
-\citation{Kilburn1998,Ortiz2003,Kilburn2003}
-\citation{Smith2009,Smith2010}
-\citation{Bell2011}
+\citation{Kilburn1998,Ortiz2003,Kilburn2003,Smith2009}
+\citation{Tarraga2006}
+\citation{Lavallee2008}
+\citation{Smith2010,Budi2013,Chardot2013}
+\citation{Moretto2016}
+\citation{Boue2015}
+\citation{Salvage2016,Salvage2017}
+\citation{Bell2011,Bell2013}
+\citation{Vasseur2015}
 \citation{Chiodini2016}
 \citation{HullWhite1990}
 \citation{Voight1988}
@@ -40,17 +46,19 @@
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{Fig1}{{1}{4}{(a,b) ODE solution, (a) X, and (b) 1/X. (c-f) SDE solution, (c,e) with $\gamma =0$, (d,f) with $\gamma =1$. (c,d) with $\alpha =2$, (e,f) with $\alpha =1.7$. In all the plots, the colored lines are the ODE solutions, the black lines are 50 random paths of the SDE solutions.\relax }{figure.caption.2}{}}
 \citation{HullWhite1990}
+\citation{Karatzas1991}
 \@writefile{toc}{\contentsline {section}{\numberline {3}The Failure Forecast Method SDE}{5}{section.3}}
-\newlabel{eq3a}{{4}{5}{The Failure Forecast Method SDE}{equation.3.4}{}}
-\newlabel{eq3b}{{5}{5}{The Failure Forecast Method SDE}{equation.3.5}{}}
+\newlabel{eqLin}{{4}{5}{The Failure Forecast Method SDE}{equation.3.4}{}}
+\newlabel{eq3a}{{5}{5}{The Failure Forecast Method SDE}{equation.3.5}{}}
+\newlabel{eq3b}{{6}{5}{The Failure Forecast Method SDE}{equation.3.6}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces SDE solutions, 1/X, (a,b) with $\alpha =2$, (c,d) with $\alpha =1.7$, (e,f) with $\alpha =2.3$. In (a,c,e) the colored lines are random paths of the solution, assuming $\gamma =0$ or $\gamma =0.25$. In (b,d,f) the colored lines are the pdfs of $t_f$, assuming $\gamma =0$ or $\gamma =0.25$. The dotted lines are random paths of the solution. In all the plots the black line is the ODE solution.\relax }}{6}{figure.caption.3}}
 \newlabel{Fig2}{{2}{6}{SDE solutions, 1/X, (a,b) with $\alpha =2$, (c,d) with $\alpha =1.7$, (e,f) with $\alpha =2.3$. In (a,c,e) the colored lines are random paths of the solution, assuming $\gamma =0$ or $\gamma =0.25$. In (b,d,f) the colored lines are the pdfs of $t_f$, assuming $\gamma =0$ or $\gamma =0.25$. The dotted lines are random paths of the solution. In all the plots the black line is the ODE solution.\relax }{figure.caption.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}The mean-reverting properties}{7}{section.4}}
-\newlabel{eq4a}{{6}{7}{The mean-reverting properties}{equation.4.6}{}}
-\newlabel{eq4b}{{7}{7}{The mean-reverting properties}{equation.4.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}The mean-reversion properties}{7}{section.4}}
+\newlabel{eq4a}{{7}{7}{The mean-reversion properties}{equation.4.7}{}}
+\newlabel{eq4b}{{8}{7}{The mean-reversion properties}{equation.4.8}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces (a) SDE solutions with $\alpha =2$, 1/X, with $\sigma =0$, but $\delta (t_0)>0$. Different colors correspond to different values of $\gamma $. (b) Ornstein-Uhlenbeck processes with equal $K=\frac  {\sigma ^2}{\gamma }$, but different $(\sigma , \gamma )$.\relax }}{7}{figure.caption.4}}
 \newlabel{Fig3}{{3}{7}{(a) SDE solutions with $\alpha =2$, 1/X, with $\sigma =0$, but $\delta (t_0)>0$. Different colors correspond to different values of $\gamma $. (b) Ornstein-Uhlenbeck processes with equal $K=\frac {\sigma ^2}{\gamma }$, but different $(\sigma , \gamma )$.\relax }{figure.caption.4}{}}
-\citation{Voight1988,Cornelius1995,Bell2011}
+\citation{Voight1988,Cornelius1995}
 \citation{Voight1988}
 \citation{Voight1988}
 \citation{Bevilacqua2016}
@@ -61,67 +69,77 @@
 \newlabel{Fig6}{{5}{10}{Estimators of $t_f$ based on Method 2. Blue lines assume $\alpha $ as from LLT, red as from HT. A bold line is $g_{t_f}$. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the mean path. Thin dotted lines show examples of random paths. A dashed black line marks $t_e$. Method 2 reduces the overestimation issues of Method 1, but model uncertainty is neglected and the estimates can miss $t_e$.\relax }{figure.caption.6}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Estimators of $t_f$ based on Method 3. Blue lines assume $\alpha $ as from LLT, red as from HT. A bold line is $g_{t_f}$, and bold dashed lines are its 5$^{th}$ and 95$^{th}$ percentile values. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the mean path. Thin dotted lines show examples of random paths. A dashed black line marks $t_e$. Method 3 enhances Method 2 and performs significantly better.\relax }}{11}{figure.caption.7}}
 \newlabel{Fig7}{{6}{11}{Estimators of $t_f$ based on Method 3. Blue lines assume $\alpha $ as from LLT, red as from HT. A bold line is $g_{t_f}$, and bold dashed lines are its 5$^{th}$ and 95$^{th}$ percentile values. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the mean path. Thin dotted lines show examples of random paths. A dashed black line marks $t_e$. Method 3 enhances Method 2 and performs significantly better.\relax }{figure.caption.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Examples of probability forecasts}{13}{section.6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Forecasts of $t_f$ based on Method 1. In (a,c,e) and (b,d,f) two examples are tested on three different time windows $T$. The bold line is $g_{t_f}$. Thin dashed lines bound the $90\%$ confidence interval of the ODE paths, and a thin continuous line is the mean path. A dashed black line marks $t_e$.\relax }}{14}{figure.caption.8}}
-\newlabel{Fig13}{{7}{14}{Forecasts of $t_f$ based on Method 1. In (a,c,e) and (b,d,f) two examples are tested on three different time windows $T$. The bold line is $g_{t_f}$. Thin dashed lines bound the $90\%$ confidence interval of the ODE paths, and a thin continuous line is the mean path. A dashed black line marks $t_e$.\relax }{figure.caption.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Forecasts of $t_f$ based on Method 2. In (a,c,e) and (b,d,f) two examples are tested on three different time windows $T$. The bold line is $g_{t_f}$. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the mean path. Thin dotted lines show examples of random paths. A thin dashed line marks $1/x_0$, and a dashed black line marks $t_e$.\relax }}{15}{figure.caption.9}}
-\newlabel{Fig8_10}{{8}{15}{Forecasts of $t_f$ based on Method 2. In (a,c,e) and (b,d,f) two examples are tested on three different time windows $T$. The bold line is $g_{t_f}$. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the mean path. Thin dotted lines show examples of random paths. A thin dashed line marks $1/x_0$, and a dashed black line marks $t_e$.\relax }{figure.caption.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Forecasts of $t_f$ based on Method 3. In (a,c,e) and (b,d,f) two examples are tested on three different time windows $T$. The bold line is $g_{t_f}$, and bold dashed lines are its 5$^{th}$ and 95$^{th}$ percentile values. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the mean path. Thin dotted lines show examples of random paths. A thin dashed line marks $1/x_0$, and a dashed black line marks $t_e$.\relax }}{16}{figure.caption.10}}
-\newlabel{Fig9_11}{{9}{16}{Forecasts of $t_f$ based on Method 3. In (a,c,e) and (b,d,f) two examples are tested on three different time windows $T$. The bold line is $g_{t_f}$, and bold dashed lines are its 5$^{th}$ and 95$^{th}$ percentile values. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the mean path. Thin dotted lines show examples of random paths. A thin dashed line marks $1/x_0$, and a dashed black line marks $t_e$.\relax }{figure.caption.10}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{17}{section.7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Barplots of the likelihood $P\{t_e=t_f\}$. In plot (a) the black bars assume Method 1, the colored bars Method 2. Plot (b) assumes Method 3, and the full bars are the mean values, and the shaded bars are the 95$^{th}$ percentile values of the likelihood.\relax }}{17}{figure.caption.11}}
-\newlabel{Fig15}{{10}{17}{Barplots of the likelihood $P\{t_e=t_f\}$. In plot (a) the black bars assume Method 1, the colored bars Method 2. Plot (b) assumes Method 3, and the full bars are the mean values, and the shaded bars are the 95$^{th}$ percentile values of the likelihood.\relax }{figure.caption.11}{}}
-\citation{Voight1988}
-\citation{Cornelius1995}
-\citation{Cornelius1995}
+\citation{Boue2015}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Examples of probability forecasts}{12}{section.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Forecasts of $t_f$ based on Method 1. In (a,c,e) and (b,d,f) two examples are tested on three different time windows $T$. The bold line is $g_{t_f}$. Thin dashed lines bound the $90\%$ confidence interval of the ODE paths, and a thin continuous line is the mean path. A dashed black line marks $t_e$.\relax }}{13}{figure.caption.8}}
+\newlabel{Fig13}{{7}{13}{Forecasts of $t_f$ based on Method 1. In (a,c,e) and (b,d,f) two examples are tested on three different time windows $T$. The bold line is $g_{t_f}$. Thin dashed lines bound the $90\%$ confidence interval of the ODE paths, and a thin continuous line is the mean path. A dashed black line marks $t_e$.\relax }{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Forecasts of $t_f$ based on Method 2. In (a,c,e) and (b,d,f) two examples are tested on three different time windows $T$. The bold line is $g_{t_f}$. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the mean path. Thin dotted lines show examples of random paths. A thin dashed line marks $1/x_0$, and a dashed black line marks $t_e$.\relax }}{14}{figure.caption.9}}
+\newlabel{Fig8_10}{{8}{14}{Forecasts of $t_f$ based on Method 2. In (a,c,e) and (b,d,f) two examples are tested on three different time windows $T$. The bold line is $g_{t_f}$. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the mean path. Thin dotted lines show examples of random paths. A thin dashed line marks $1/x_0$, and a dashed black line marks $t_e$.\relax }{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Forecasts of $t_f$ based on Method 3. In (a,c,e) and (b,d,f) two examples are tested on three different time windows $T$. The bold line is $g_{t_f}$, and bold dashed lines are its 5$^{th}$ and 95$^{th}$ percentile values. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the mean path. Thin dotted lines show examples of random paths. A thin dashed line marks $1/x_0$, and a dashed black line marks $t_e$.\relax }}{15}{figure.caption.10}}
+\newlabel{Fig9_11}{{9}{15}{Forecasts of $t_f$ based on Method 3. In (a,c,e) and (b,d,f) two examples are tested on three different time windows $T$. The bold line is $g_{t_f}$, and bold dashed lines are its 5$^{th}$ and 95$^{th}$ percentile values. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the mean path. Thin dotted lines show examples of random paths. A thin dashed line marks $1/x_0$, and a dashed black line marks $t_e$.\relax }{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{16}{section.7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Barplots of the likelihood $P\{t_e=t_f\}$. In plot (a) the black bars assume Method 1, the colored bars Method 2. Plot (b) assumes Method 3, and the full bars are the mean values, and the shaded bars are the 95$^{th}$ percentile values of the likelihood.\relax }}{16}{figure.caption.11}}
+\newlabel{Fig15}{{10}{16}{Barplots of the likelihood $P\{t_e=t_f\}$. In plot (a) the black bars assume Method 1, the colored bars Method 2. Plot (b) assumes Method 3, and the full bars are the mean values, and the shaded bars are the 95$^{th}$ percentile values of the likelihood.\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Barplots of the likelihood $P\{t_e=t_f\}$ in two forecasting examples, on three different time windows. In plot (a) the black bars assume Method 1, the colored bars Method 2. Plot (b) assumes Method 3, and the full bars are the mean values, and the shaded bars are the 95$^{th}$ percentile values of the likelihood.\relax }}{17}{figure.caption.12}}
+\newlabel{Fig16}{{11}{17}{Barplots of the likelihood $P\{t_e=t_f\}$ in two forecasting examples, on three different time windows. In plot (a) the black bars assume Method 1, the colored bars Method 2. Plot (b) assumes Method 3, and the full bars are the mean values, and the shaded bars are the 95$^{th}$ percentile values of the likelihood.\relax }{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusions}{17}{section.8}}
 \citation{Bell2011}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Barplots of the likelihood $P\{t_e=t_f\}$ in two forecasting examples, on three different time windows. In plot (a) the black bars assume Method 1, the colored bars Method 2. Plot (b) assumes Method 3, and the full bars are the mean values, and the shaded bars are the 95$^{th}$ percentile values of the likelihood.\relax }}{18}{figure.caption.12}}
-\newlabel{Fig16}{{11}{18}{Barplots of the likelihood $P\{t_e=t_f\}$ in two forecasting examples, on three different time windows. In plot (a) the black bars assume Method 1, the colored bars Method 2. Plot (b) assumes Method 3, and the full bars are the mean values, and the shaded bars are the 95$^{th}$ percentile values of the likelihood.\relax }{figure.caption.12}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusions}{18}{section.8}}
+\citation{Voight1988}
+\citation{Cornelius1995}
 \citation{Voight1988}
 \citation{Voight1988}
-\@writefile{toc}{\contentsline {section}{\numberline {A}Classical statistical analysis of FFM}{19}{appendix.A}}
-\newlabel{A-1}{{A}{19}{Classical statistical analysis of FFM}{appendix.A}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Methods LLT and HT applied to (a,b) St. Helens and (c,d) Bezymyanny\&Mt. Toc datasets. Different colors correspond to different data. Dashed lines bound the $90\%$ confidence interval of the regression line. Figure modified from \cite  {Voight1988}.\relax }}{19}{figure.caption.14}}
-\newlabel{Fig4}{{12}{19}{Methods LLT and HT applied to (a,b) St. Helens and (c,d) Bezymyanny\&Mt. Toc datasets. Different colors correspond to different data. Dashed lines bound the $90\%$ confidence interval of the regression line. Figure modified from \cite {Voight1988}.\relax }{figure.caption.14}{}}
-\@writefile{toc}{\contentsline {paragraph}{Log-rate versus log-acceleration technique (LLT)}{19}{section*.15}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Classical statistical analysis of FFM}{18}{appendix.A}}
+\newlabel{A-1}{{A}{18}{Classical statistical analysis of FFM}{appendix.A}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Methods LLT and HT applied to (a,b) St. Helens and (c,d) Bezymyanny\&Mt. Toc datasets. Different colors correspond to different data. Dashed lines bound the $90\%$ confidence interval of the regression line. Figure modified from \cite  {Voight1988}.\relax }}{18}{figure.caption.14}}
+\newlabel{Fig4}{{12}{18}{Methods LLT and HT applied to (a,b) St. Helens and (c,d) Bezymyanny\&Mt. Toc datasets. Different colors correspond to different data. Dashed lines bound the $90\%$ confidence interval of the regression line. Figure modified from \cite {Voight1988}.\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Forecasts of $t_f$ based on Method 2. The solutions assume equal $K=\frac  {\sigma ^2}{\gamma }$, but different $(\sigma , \gamma )$. In plots (a,c) $\gamma ^{-1}=7.5$, and in plots (b,d) $\gamma ^{-1}=30$. The bold line is the pdf of $t_f$. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the median path. Thin dotted lines show examples of random paths. A thin dashed line marks $1/x_0$, and a dashed black line marks $t_e$.\relax }}{19}{figure.caption.15}}
+\newlabel{Fig12}{{13}{19}{Forecasts of $t_f$ based on Method 2. The solutions assume equal $K=\frac {\sigma ^2}{\gamma }$, but different $(\sigma , \gamma )$. In plots (a,c) $\gamma ^{-1}=7.5$, and in plots (b,d) $\gamma ^{-1}=30$. The bold line is the pdf of $t_f$. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the median path. Thin dotted lines show examples of random paths. A thin dashed line marks $1/x_0$, and a dashed black line marks $t_e$.\relax }{figure.caption.15}{}}
+\citation{Voight1988}
 \bibstyle{apalike}
 \bibdata{bibfileFFM}
-\@writefile{toc}{\contentsline {paragraph}{Hindsight technique (HT)}{20}{section*.16}}
-\@writefile{toc}{\contentsline {paragraph}{Linearized least-squares method (LLSM)}{20}{section*.17}}
-\@writefile{toc}{\contentsline {section}{\numberline {B}Sensitivity analysis on the noise properties}{20}{appendix.B}}
-\newlabel{A-2}{{B}{20}{Sensitivity analysis on the noise properties}{appendix.B}{}}
 \bibcite{Bebbington2013}{{1}{2013}{{Bebbington}}{{}}}
 \bibcite{Bell2011}{{2}{2011}{{Bell et~al.}}{{}}}
-\bibcite{Bevilacqua2016}{{3}{2016}{{Bevilacqua}}{{}}}
-\bibcite{Bevilacqua2018}{{4}{2018}{{Bevilacqua et~al.}}{{}}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Forecasts of $t_f$ based on Method 2. The solutions assume equal $K=\frac  {\sigma ^2}{\gamma }$, but different $(\sigma , \gamma )$. In plots (a,c) $\gamma ^{-1}=7.5$, and in plots (b,d) $\gamma ^{-1}=30$. The bold line is the pdf of $t_f$. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the median path. Thin dotted lines show examples of random paths. A thin dashed line marks $1/x_0$, and a dashed black line marks $t_e$.\relax }}{21}{figure.caption.18}}
-\newlabel{Fig12}{{13}{21}{Forecasts of $t_f$ based on Method 2. The solutions assume equal $K=\frac {\sigma ^2}{\gamma }$, but different $(\sigma , \gamma )$. In plots (a,c) $\gamma ^{-1}=7.5$, and in plots (b,d) $\gamma ^{-1}=30$. The bold line is the pdf of $t_f$. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the median path. Thin dotted lines show examples of random paths. A thin dashed line marks $1/x_0$, and a dashed black line marks $t_e$.\relax }{figure.caption.18}{}}
-\bibcite{Bevilacqua2016b}{{5}{2016}{{Bevilacqua et~al.}}{{}}}
-\bibcite{Bevilacqua2015}{{6}{2015}{{Bevilacqua et~al.}}{{}}}
-\bibcite{Bevilacqua2017a}{{7}{2017a}{{Bevilacqua et~al.}}{{}}}
-\bibcite{Bevilacqua2017b}{{8}{2017b}{{Bevilacqua et~al.}}{{}}}
-\bibcite{Chiodini2016}{{9}{2016}{{Chiodini et~al.}}{{}}}
-\bibcite{Cornelius1994}{{10}{1994}{{Cornelius and Voight}}{{}}}
-\bibcite{Cornelius1995}{{11}{1995}{{Cornelius and Voight}}{{}}}
-\bibcite{Cornelius1996}{{12}{1996}{{Cornelius and Voight}}{{}}}
-\bibcite{HullWhite1990}{{13}{1990}{{Hull and White}}{{}}}
-\bibcite{Kilburn2003}{{14}{2003}{{Kilburn}}{{}}}
-\bibcite{Kilburn1998}{{15}{1998}{{Kilburn and Voight}}{{}}}
-\bibcite{Marzocchi2012}{{16}{2012}{{Marzocchi and Bebbington}}{{}}}
-\bibcite{Neri2015}{{17}{2015}{{Neri et~al.}}{{}}}
-\bibcite{Ortiz2003}{{18}{2003}{{Ortiz et~al.}}{{}}}
-\bibcite{Richardson2017}{{19}{2017}{{Richardson et~al.}}{{}}}
-\bibcite{Selva2012}{{20}{2012}{{Selva et~al.}}{{}}}
-\bibcite{Smith2010}{{21}{2010}{{Smith and Kilburn}}{{}}}
-\bibcite{Smith2009}{{22}{2009}{{Smith et~al.}}{{}}}
-\bibcite{Sparks2004}{{23}{2004}{{Sparks and Aspinall}}{{}}}
-\bibcite{Tadini2017b}{{24}{2017a}{{Tadini et~al.}}{{}}}
-\bibcite{Tadini2017a}{{25}{2017b}{{Tadini et~al.}}{{}}}
-\bibcite{Voight1987}{{26}{1987}{{Voight}}{{}}}
-\bibcite{Voight1988}{{27}{1988a}{{Voight}}{{}}}
-\bibcite{Voight1988b}{{28}{1988b}{{Voight}}{{}}}
-\bibcite{Voight1989}{{29}{1989}{{Voight}}{{}}}
-\bibcite{Voight1991}{{30}{1991}{{Voight and Cornelius}}{{}}}
-\bibcite{Voight1989b}{{31}{1989}{{Voight et~al.}}{{}}}
-\bibcite{Voight2000}{{32}{2000}{{Voight et~al.}}{{}}}
+\bibcite{Bell2013}{{3}{2013}{{Bell et~al.}}{{}}}
+\bibcite{Bevilacqua2016}{{4}{2016}{{Bevilacqua}}{{}}}
+\bibcite{Bevilacqua2018}{{5}{2018}{{Bevilacqua et~al.}}{{}}}
+\bibcite{Bevilacqua2017a}{{6}{2017a}{{Bevilacqua et~al.}}{{}}}
+\bibcite{Bevilacqua2016b}{{7}{2016}{{Bevilacqua et~al.}}{{}}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Sensitivity analysis on the noise properties}{20}{appendix.B}}
+\newlabel{A-2}{{B}{20}{Sensitivity analysis on the noise properties}{appendix.B}{}}
+\bibcite{Bevilacqua2015}{{8}{2015}{{Bevilacqua et~al.}}{{}}}
+\bibcite{Bevilacqua2017b}{{9}{2017b}{{Bevilacqua et~al.}}{{}}}
+\bibcite{Boue2015}{{10}{2015}{{Bou\'e et~al.}}{{}}}
+\bibcite{Budi2013}{{11}{2013}{{Budi-Santoso et~al.}}{{}}}
+\bibcite{Chardot2013}{{12}{2013}{{Chardot et~al.}}{{}}}
+\bibcite{Chiodini2016}{{13}{2016}{{Chiodini et~al.}}{{}}}
+\bibcite{Cornelius1994}{{14}{1994}{{Cornelius and Voight}}{{}}}
+\bibcite{Cornelius1995}{{15}{1995}{{Cornelius and Voight}}{{}}}
+\bibcite{Cornelius1996}{{16}{1996}{{Cornelius and Voight}}{{}}}
+\bibcite{Fukuzuno1985}{{17}{1985}{{Fukuzuno}}{{}}}
+\bibcite{HullWhite1990}{{18}{1990}{{Hull and White}}{{}}}
+\bibcite{Karatzas1991}{{19}{1991}{{Karatzas and Shreve}}{{}}}
+\bibcite{Kilburn2003}{{20}{2003}{{Kilburn}}{{}}}
+\bibcite{Kilburn1998}{{21}{1998}{{Kilburn and Voight}}{{}}}
+\bibcite{Lavallee2008}{{22}{2008}{{Lavall\'ee et~al.}}{{}}}
+\bibcite{Marzocchi2012}{{23}{2012}{{Marzocchi and Bebbington}}{{}}}
+\bibcite{Moretto2016}{{24}{2016}{{Moretto et~al.}}{{}}}
+\bibcite{Neri2015}{{25}{2015}{{Neri et~al.}}{{}}}
+\bibcite{Ortiz2003}{{26}{2003}{{Ortiz et~al.}}{{}}}
+\bibcite{Richardson2017}{{27}{2017}{{Richardson et~al.}}{{}}}
+\bibcite{Salvage2016}{{28}{2016}{{Salvage and Neuberg}}{{}}}
+\bibcite{Salvage2017}{{29}{2017}{{Salvage et~al.}}{{}}}
+\bibcite{Selva2012}{{30}{2012}{{Selva et~al.}}{{}}}
+\bibcite{Smith2010}{{31}{2010}{{Smith and Kilburn}}{{}}}
+\bibcite{Smith2009}{{32}{2009}{{Smith et~al.}}{{}}}
+\bibcite{Sparks2004}{{33}{2004}{{Sparks and Aspinall}}{{}}}
+\bibcite{Tadini2017b}{{34}{2017a}{{Tadini et~al.}}{{}}}
+\bibcite{Tadini2017a}{{35}{2017b}{{Tadini et~al.}}{{}}}
+\bibcite{Tarraga2006}{{36}{2006}{{T{\'a}rraga et~al.}}{{}}}
+\bibcite{Vasseur2015}{{37}{2015}{{Vasseur et~al.}}{{}}}
+\bibcite{Voight1987}{{38}{1987}{{Voight}}{{}}}
+\bibcite{Voight1988}{{39}{1988a}{{Voight}}{{}}}
+\bibcite{Voight1988b}{{40}{1988b}{{Voight}}{{}}}
+\bibcite{Voight1989}{{41}{1989}{{Voight}}{{}}}
+\bibcite{Voight1991}{{42}{1991}{{Voight and Cornelius}}{{}}}
+\bibcite{Voight1989b}{{43}{1989}{{Voight et~al.}}{{}}}
+\bibcite{Voight2000}{{44}{2000}{{Voight et~al.}}{{}}}

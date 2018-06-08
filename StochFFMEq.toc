@@ -1,13 +1,10 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}
 \contentsline {section}{\numberline {2}The Failure Forecast Method ODE}{3}{section.2}
 \contentsline {section}{\numberline {3}The Failure Forecast Method SDE}{5}{section.3}
-\contentsline {section}{\numberline {4}The mean-reverting properties}{7}{section.4}
+\contentsline {section}{\numberline {4}The mean-reversion properties}{7}{section.4}
 \contentsline {section}{\numberline {5}Parameter fitting and UQ}{8}{section.5}
-\contentsline {section}{\numberline {6}Examples of probability forecasts}{13}{section.6}
-\contentsline {section}{\numberline {7}Discussion}{17}{section.7}
-\contentsline {section}{\numberline {8}Conclusions}{18}{section.8}
-\contentsline {section}{\numberline {A}Classical statistical analysis of FFM}{19}{appendix.A}
-\contentsline {paragraph}{Log-rate versus log-acceleration technique (LLT)}{19}{section*.15}
-\contentsline {paragraph}{Hindsight technique (HT)}{20}{section*.16}
-\contentsline {paragraph}{Linearized least-squares method (LLSM)}{20}{section*.17}
+\contentsline {section}{\numberline {6}Examples of probability forecasts}{12}{section.6}
+\contentsline {section}{\numberline {7}Discussion}{16}{section.7}
+\contentsline {section}{\numberline {8}Conclusions}{17}{section.8}
+\contentsline {section}{\numberline {A}Classical statistical analysis of FFM}{18}{appendix.A}
 \contentsline {section}{\numberline {B}Sensitivity analysis on the noise properties}{20}{appendix.B}
