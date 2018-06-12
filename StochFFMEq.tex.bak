@@ -35,7 +35,7 @@
 \newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
 
 \begin{document}
-\title{\bf A doubly stochastic enhancement of the Failure Forecast Method using a noisy mean-reverting process}
+\title{Doubly stochastic enhancement of the Failure Forecast Method using a noisy mean-reverting process and application to volcanic eruption forecasts}
 \author[1]{Andrea Bevilacqua}
 \author[2]{E. Bruce Pitman}
 \author[3,4]{Abani K. Patra}
@@ -52,18 +52,18 @@
 
 \maketitle
 \abstract
-We introduce a doubly stochastic method for performing material failure theory based forecasts of volcanic eruptions. The method enhances the well known Failure Forecast Method equation, introducing a new formulation similar to the Hull-White model. In particular, we incorporate a stochastic noise term in the original equation, and systematically characterize the uncertainty. The model is a stochastic differential equation (SDE) with mean reverting paths, where the traditional ordinary differential equation (ODE) defines the mean solution. Our implementation allows the model to make excursions from the classical solutions, by including uncertainty in the estimation. The doubly stochastic formulation is particularly powerful, in that it provides a complete posterior probability distribution, allowing civil protection officials to determine a worst case scenario with a specified level of confidence. We validate the new method on historical datasets of precursory signals, across a wide range of possible values of convexity in the solutions and amounts of scattering in the observations. The results show the increased forecasting skill of the doubly stochastic formulation of the SDE.
-
-\tableofcontents
+We introduce a doubly stochastic method for performing material failure theory based forecasts of volcanic eruptions. The method enhances the well known Failure Forecast Method equation, introducing a new formulation similar to the Hull-White model in financial mathematics. In particular, we incorporate a stochastic noise term in the original equation, and systematically characterize the uncertainty. The model is a stochastic differential equation (SDE) with mean reverting paths, where the traditional ordinary differential equation (ODE) defines the mean solution. Our implementation allows the model to make excursions from the classical solutions, by including uncertainty in the estimation. The doubly stochastic formulation is particularly powerful, in that it provides a complete posterior probability distribution, allowing civil protection officials to determine a worst case scenario with a specified level of confidence. We validate the new method on historical datasets of precursory signals, across a wide range of possible values of convexity in the solutions and amounts of scattering in the observations. The results show the increased forecasting skill of the doubly stochastic formulation of the SDE.
 
 \section{Introduction}
 The Failure Forecast Method (FFM) for volcanic eruptions is a classical tool in the interpretation of monitoring data as potential precursors, providing quantitative predictions of the eruption onset. The basis of FFM is a fundamental law for failing materials:
 $$dX/dt=AX^\alpha,$$
 where $X$ is the rate of the precursor signal, and $\alpha$, $A$ are model parameters. The solution $X$ is a power law of exponent $1/(1-\alpha)$ diverging at time $t_f$, called failure time. The model represents the potential cascading of precursory signals leading to the final rupture of materials, with $t_f$ a good approximation to the eruption onset time $t_e$.
 
-The FFM equation was originally developed in landslide forecasting \citep{Fukuzuno1985, Voight1987, Voight1988b, Voight1989b}, and later applied in eruption forecasting \citep{Voight1988, Voight1989, Cornelius1995}. The method was retrospectively applied to several volcanic systems, including dome growth episodes and explosive volcanic eruptions \citep{Voight1991, Cornelius1994, Cornelius1996, Voight2000}. Seismic data are the type of signals most extensively studied with the FFM method in volcanology. Volcanic tremor has been related to the multi-scale rock cracking \citep{Kilburn1998,Ortiz2003,Kilburn2003,Smith2009} and volcano-tectonic earthquakes can be forecasted applying the FFM on its characteristics \citep{Tarraga2006}. Rheological experiments on lava domes revealed that also the magma seismicity is consistent with the FFM theory \citep{Lavallee2008}. In general, retrospective analysis of pre-eruptive seismic data produced good results in several case studies (e.g. \cite{Smith2010, Budi2013, Chardot2013}). Finally, the FFM has been successfully tested on Synthetic Aperture Radar acquisitions, opening the path to new forecasting applications based on satellite data \citep{Moretto2016}.
+The FFM equation was originally developed in landslide forecasting \citep{Fukuzuno1985, Voight1987, Voight1988b, Voight1989b}, and later applied in eruption forecasting \citep{Voight1988, Voight1989, Cornelius1995}. The method was retrospectively applied to several volcanic systems, including dome growth episodes and explosive volcanic eruptions \citep{Voight1991, Cornelius1994, Cornelius1996, Voight2000}. 
 
-The reliability of FFM forecasts is known to be affected by several factors. When applied on seismic data, the performance of the method is usually higher on eruptions preceded by a single phase of seismic acceleration \citep{Boue2015}. The preliminary separation of signals originating from different sources can improve the results \citep{Salvage2016, Salvage2017}. Technically, nonlinear (power law) regression or non-Gaussian maximum likelihood methods can also enhance the accuracy of the forecasts, compared to linear models \citep{Bell2011, Bell2013}. In general, the forecasting accuracy of FFM has been related to the heterogeneity in the breaking material \citep{Vasseur2015}. However, sometimes the method fails to predict the time of material failure, and some volcanic systems are often characterized by prolonged unrest and ambiguous signals \citep{Chiodini2016}. A full probability assessment, including uncertainty quantification (UQ), is required, and it is the purpose of our investigations.
+Seismic data are the type of signals most extensively studied with the FFM method in volcanology. Volcanic tremor has been related to the multi-scale rock cracking \citep{Kilburn1998,Ortiz2003,Kilburn2003,Smith2009} and volcano-tectonic earthquakes can be forecasted applying the FFM on its characteristics \citep{Tarraga2006}. Rheological experiments on lava domes revealed that also the magma seismicity is consistent with the FFM theory \citep{Lavallee2008}. In general, retrospective analysis of pre-eruptive seismic data produced good results in several case studies (e.g. \cite{Smith2010, Budi2013, Chardot2013}). Finally, the FFM has been successfully tested on Synthetic Aperture Radar acquisitions, opening the path to new forecasting applications based on satellite data \citep{Moretto2016}.
+
+The reliability of FFM forecasts is known to be affected by several factors. When applied to seismic data, the performance of the method is usually higher on eruptions preceded by a single phase of seismic acceleration \citep{Boue2015}. The preliminary separation of signals originating from different sources can improve the results \citep{Salvage2016, Salvage2017}. Technically, nonlinear (power law) regression or non-Gaussian maximum likelihood methods can also enhance the accuracy of the forecasts, compared to linear models \citep{Bell2011, Bell2013}. In general, the forecasting accuracy of FFM has been related to the heterogeneity in the breaking material \citep{Vasseur2015}. However, sometimes the method fails to predict the time of material failure, and some volcanic systems are often characterized by prolonged unrest and ambiguous signals \citep{Chiodini2016}. A full probability assessment, including uncertainty quantification (UQ), is required, and it is the purpose of our investigations.
 
 In this study, we generalize the classical FFM approach by incorporating a stochastic noise in the original ordinary differential equation (ODE), converting it into a stochastic differential equation (SDE), and systematically characterizing the uncertainty. Embedding noise in the model can enable the FFM equation to have greater forecasting skill by focusing on averages and moments. Sudden changes in the power law properties are made possible. In our model, the prediction is thus perturbed inside a range that can be tuned, producing probabilistic forecasts.
 
@@ -73,9 +73,11 @@ i.e. a straight line which hits zero at $t_f$. The most efficient graphical and 
 $$d\eta_t=\gamma[(1-\alpha)A(t-t_0)+\eta_{t_0}-\eta_t]dt+\sigma dWt,$$
 also called Hull-White model in financial mathematics \citep{HullWhite1990}. The parameter $\sigma$ defines the strength of the noise, and $\gamma$ the rapidity of the mean-reversion property. We validate the new method on historical datasets of precursory signals already studied with the classical FFM, including line-length and fault movement at Mt. St. Helens, 1981-82, seismic signals registered from Bezymyanny, 1960, and surface movement of Mt. Toc, 1963 \citep{Voight1988}.
 
-A fundamental aspect of our formulation is the possibility of a doubly stochastic UQ. Doubly stochastic models describe the effect of uncertainty in the formulation of aleatory processes, and have been successfully applied in volcanology \citep{Sparks2004, Marzocchi2012, Bevilacqua2016}. Thus, doubly stochastic probability density functions (pdf) and estimates are themselves affected by uncertainty. This approach has been applied in spatial problems concerning eruptive vent/fissure mapping \citep{Selva2012, Bevilacqua2015, Tadini2017a, Tadini2017b, Bevilacqua2017a}, long-term temporal problems based on past eruption record \citep{Bebbington2013, Bevilacqua2016b, Richardson2017, Bevilacqua2018}, and hazard assessments \citep{Neri2015, Bevilacqua2017b}. In this study, a doubly stochastic model is applied in a short-term eruption forecasting method based on precursory signals.
+A fundamental aspect of our formulation is the possibility of a doubly stochastic UQ. Doubly stochastic models describe the effect of uncertainty in the formulation of aleatory processes, and have been successfully applied in volcanology \citep{Sparks2004, Marzocchi2012, Bevilacqua2016}. Thus, doubly stochastic probability density functions (pdf) and estimates are themselves affected by uncertainty. This approach has been applied in spatial problems concerning eruptive vent/fissure mapping \citep{Selva2012, Bevilacqua2015, Tadini2017a, Tadini2017b, Bevilacqua2017a}, long-term temporal problems based on past eruption record \citep{Bebbington2013, Bevilacqua2016b, Richardson2017, Bevilacqua2018}, and hazard assessments \citep{Neri2015, Bevilacqua2017b}. In this study, we use a doubly stochastic model to develop a short-term eruption forecasting method based on precursory signals.
 
-\section{The Failure Forecast Method ODE}
+The first part of this article defines the mathematical model adopted. In section \ref{s1} we present the equations in FFM method, in section \ref{s2} we define their enhancement with a mean-reverting SDE, and section \ref{s3} details the properties of the mean reversion. The second part of the article tests the model on historical datasets. In section \ref{s4} we define the fitting algorithm and compare retrospective analysis based on three different formulations of FFM. Section \ref{s5} tests the model on forecasting problems, and section \ref{s6} discusses the performance of the methods, showing the increased forecasting skill of the doubly stochastic formulation.
+
+\section{The Failure Forecast Method ODE}\label{s1}
 The classical Failure Forecast Method (FFM) equation is:
 \begin{align}\label{eq1}
 \dot\Omega^{-\alpha}\ddot{\Omega}=A,
@@ -104,9 +106,13 @@ The original method required fitting the two parameters $\alpha$ and $A$ on the 
 $$t_f=\inf\{t:\eta(t)=0\}, \quad\quad \eta(t)=(\alpha-1)A(t_f-t),$$
 and so:
 $$t_f-t=\frac{\eta(t)}{(\alpha-1)A}.$$
-We note that an estimate of $\eta(t)$ is thus necessary to make forecasts, a non-trivial process if noise is assumed to be present. 
-
+We note that an estimate of $\eta(t)$ is thus necessary to make forecasts, a non-trivial process if noise is assumed to be present.
 The effect of varying parameters $\alpha$ and $A$ in the equation \ref{eq2b} is displayed in Figure \ref{Fig1}a,b. Our purpose is to forecast the failure time $t_f$, and hence it is more practical to examine the plot of $X^{-1}=\eta^{\frac{1}{\alpha-1}}$, shown in Fig.\ref{Fig1}b. The parameter $\alpha$ defines the convexity of that function - for $\alpha\le2$ it is convex, for $\alpha\ge2$ it is concave. The value $\alpha=2$ produces a straight line. We call $\alpha$ the {\it convexity} parameter. In equation \ref{eq2a} the parameter $A$ changes the time scale of the equation, and so defines the constant slope of $\eta$, that is $-A$. Hence we call $A$ the {\it slope} parameter.
+
+\section{The Failure Forecast Method SDE}\label{s2}
+We assume that the equation is not exactly satisfied, but there is a transient difference, which however decreases exponentially through time. The equation becomes:
+$$\eta(t)=(1-\alpha)A(t-t_0) +\beta\exp(-\gamma t)+\eta(t_0),$$
+where $\beta$ is the value at $t=0$ and $\gamma$ is the rate of decay of this error term.
 
 \begin{figure}[H]
 \centering
@@ -114,11 +120,6 @@ The effect of varying parameters $\alpha$ and $A$ in the equation \ref{eq2b} is 
 \caption{(a,b) ODE solution, (a) X, and (b) 1/X. (c-f) SDE solution, (c,e) with $\gamma=0$, (d,f) with $\gamma=1$. (c,d) with $\alpha=2$, (e,f) with $\alpha=1.7$. The colored lines are the ODE solutions, the black lines are 50 random paths of the SDE solutions.}
 \label{Fig1}
 \end{figure}
-
-\section{The Failure Forecast Method SDE}
-We assume that the equation is not exactly verified, but there is a transient difference, which however decreases exponentially through time. The equation becomes:
-$$\eta(t)=(1-\alpha)A(t-t_0) +\beta\exp(-\gamma t)+\eta(t_0),$$
-where $\beta$ is the value at $t=0$ and $\gamma$ is the rate of decay of this error term.
 
 This allows a reformulation of the equation. Given that:
 $$\eta(t)-(1-\alpha)A(t-t_0)-\eta(t_0)=\beta\exp(-\gamma t),$$
@@ -139,14 +140,20 @@ or equivalently:
 X_t=\left\{X_{t_0}^{1-\alpha}+\int_{t_0}^t\left\{\gamma\left[(1-\alpha)A(s-t_0)+X_{t_0}^{1-\alpha}-X_s^{1-\alpha}\right]+(1-\alpha)A\right\}dt+\int_{t_0}^t\sigma dW_s\right\}^{\frac{1}{1-\alpha}},
 \end{align}
 for each $t<t_f$. This is also called a Hull-White model in financial mathematics \citep{HullWhite1990}.
-\vskip.3cm
+
 The effect of varying parameters $\sigma$ and $\gamma$ on the SDE solution $X$ is displayed in Figure \ref{Fig1}c-f. In equation \ref{eq3a}, $\sigma$ defines the time scale of the additive noise, and so we call $\sigma$ the {\it noise} parameter. We remark that $X$ is nonlinearly affected by this random noise in equation \ref{eq3b}. The SDE defining $\eta$ is elevated to the exponent $\frac{1}{1-\alpha}$, and even a relatively small noise can significantly change the failure time (see Fig.\ref{Fig1}c,e). Parameter $\gamma$ defines the time scale of the exponential decay of perturbations with respect to the mean solution. It controls the equation, reverting the paths of the solutions towards the mean curve (see Fig.\ref{Fig1}d,f). We call $\gamma$ the {\it mean-reversion} parameter.
-\vskip.3cm
+
 The new formulation allows the SDE solution to make random excursions from the classical ODE solution. Figure \ref{Fig2} displays three different solutions of $X^{-1}$, assuming convexity parameter $\alpha=1.7$, $2$, or $2.3$. The slope parameter is fixed $A=0.1$. Plots \ref{Fig2}a,c,e show an example of solutions assuming mean-reversion parameter $\gamma=0$, or $\gamma=0.25$. The noise is additive in \ref{Fig2}a, and weakly nonlinear in \ref{Fig2}c,e. We note that $\sigma$ and $\gamma$ define the noise affecting $\eta$, the same $(\alpha,\gamma)$ can produce significantly different noise effects on $X^{-1}$ depending on the exponent $\frac{1}{1-\alpha}$.
-\vskip.3cm
+
 A very important consequence of our stochastic formulation is that the time of failure becomes a random variable:
 $$X:\left(\Omega, (\mathcal F_t)_{t>t_0}, P\right), \quad t_f(\omega)=\inf\{t: X^{-1}(\omega,t)=0\},$$
 for a.e. $\omega\in\Omega$, where $(\mathcal F_t)_{t>t_0}$ is the filtration generated by the noise, and $P$ is a probability measure over it \citep{Karatzas1991}. Plots \ref{Fig2}b,d,f display pdf of $t_f$ calculated by Monte Carlo simulation (2,000 samples). The pdf becomes more peaked and symmetric when $\gamma>0$.
+
+\section{The mean-reversion properties}\label{s3}
+Let $\hat\eta$ be the ODE solution with data $\eta(t_0)$ at time $t_0$. If $\sigma>0$ and $\gamma=0$, the law of Brownian Motion and the linearity of the ODE imply that:
+$$\eta(t)-\hat\eta(t)\sim \mathcal N\left(0,\sigma^2(t-t_0)\right).$$
+If $\gamma>0$ then $\left|\eta(t)-\hat\eta(t)\right|$ is reduced to zero exponentially. If $\sigma=0$ and the equation starts with $\delta(t_0):=|\eta(t_0)-\hat\eta(t_0)|>0$ we have:
+$$\delta(t):=\left|\eta(t)-\hat\eta(t)\right|=\exp[-\gamma(t-t_0)].$$
 
 \begin{figure}[H]
 \centering
@@ -154,14 +161,7 @@ for a.e. $\omega\in\Omega$, where $(\mathcal F_t)_{t>t_0}$ is the filtration gen
 \caption{SDE solutions, $1/X$, (a,b) with $\alpha=2$, (c,d) with $\alpha=1.7$, (e,f) with $\alpha=2.3$. A black line marks the mean solution. In (a,c,e) the colored lines are random paths, with $\gamma=0$ or $\gamma=0.25$. In (b,d,f) the colored lines are the pdfs of $t_f$ and the dotted lines are random paths.}
 \label{Fig2}
 \end{figure}
-
-\section{The mean-reversion properties}
-Let $\hat\eta$ be the ODE solution with data $\eta(t_0)$ at time $t_0$. If $\sigma>0$ and $\gamma=0$, the law of Brownian Motion and the linearity of the ODE imply that:
-$$\eta(t)-\hat\eta(t)\sim \mathcal N\left(0,\sigma^2(t-t_0)\right).$$
-If $\gamma>0$ then $\left|\eta(t)-\hat\eta(t)\right|$ is reduced to zero exponentially. If $\sigma=0$ and the equation starts with $\delta(t_0):=|\eta(t_0)-\hat\eta(t_0)|>0$ we have:
-$$\delta(t):=\left|\eta(t)-\hat\eta(t)\right|=\exp[-\gamma(t-t_0)].$$
 Figure \ref{Fig3}a shows this example, and $3\gamma^{-1}$ provides the time interval required to have $\delta(t)\simeq\delta(t_0)/20$.
-
 If both $\sigma>0$ and $\gamma>0$, the combined effect of the {\it noise} and the {\it mean-reversion} defines the Ornstein-Uhlenbeck process (from equation \ref{eq3a}, with $A=0$ and $\eta_{t_0}=0$):
 \begin{align}\label{eq4a}
 d\eta_t=-\gamma\eta_t dt+\sigma dW_t,
@@ -181,7 +181,7 @@ uniquely defines the probability distribution of the solution of this SDE. Diffe
 \label{Fig3}
 \end{figure}
 
-\section{Parameter fitting and UQ}
+\section{Parameter fitting and UQ}\label{s4}
 The application of our method requires the estimation of five parameters:
 \begin{itemize}
   \item {\it curvature} parameter $\alpha$,
@@ -192,14 +192,14 @@ The application of our method requires the estimation of five parameters:
 \end{itemize}
 We assume all these parameters to be positive, and $\alpha > 1$. In particular, the case $\alpha=1$ is trivial, and the cases $\alpha <1$ or $A\le0$ imply $t_f=+\infty$. We note that $\hat\eta(t_0)$ cannot be defined equal to the first observation, because of the perturbations.
 
-Several methods have been adopted in the determination of the parameters in the ODE problem \citep{Voight1988, Cornelius1995}. The Log-rate versus Log-acceleration Technique (LLT), and the Hindsight Technique (HT) can both provide estimates of $\alpha$. They are described in Appendix \ref{A-1}. The first technique is generally less accurate because needs an estimate of the time derivative of the observations. The second technique requires that we know $t_e$ and hence can only be used in retrospective analysis. We take advantage of these classical methods to estimate $\alpha$ in our examples, approximating the curvature of the mean solution from the available observations.
+Several methods have been adopted in the determination of the parameters in the ODE problem \citep{Voight1988, Cornelius1995}. The Log-rate versus Log-acceleration Technique (LLT), and the Hindsight Technique (HT) can both provide estimates of $\alpha$. They are described in Appendix \ref{A-1}. The first technique is generally less accurate because it needs an estimate of the time derivative of the observations. The second technique requires that we know $t_e$ and hence can only be used in retrospective analysis. We take advantage of these classical methods to estimate $\alpha$ in our examples, approximating the curvature of the mean solution from the available observations. We remark that the time derivatives are always based on the discrete data in \cite{Voight1988}, and not affected by the roughness of the paths of the new SDE formulation.
 
 If $\alpha$ is given, then a linearized least square method can be used to fit parameter $A$ and $\hat\eta(t_0)$ on the inverse plot $1/X$. This is the main method classically adopted as a forecasting technique in the ODE problem. In particular, we apply a linear regressive model to eq. \ref{eq2a}:
 $$X(t)^{1-\alpha}=(1-\alpha)A(t-t_0)+\eta(t_0),$$
 producing estimates of $(1-\alpha)A$ and $\hat\eta(t_0)$.
 
-Finally, we fit the stochastic parameters $\sigma$ and $\gamma$ on the residuals of this linearized problem, imposing the constant $K=\frac{\sigma^2}{2\gamma}$ to be equal to their variance. In summary, we plug-in $\alpha$ from classical LLT or HT, and then we obtain $\left(A,\hat\eta(t_0),K\right)$ as required to the SDE definition.
-\vskip.3cm
+Finally, we fit the stochastic parameters $\sigma$ and $\gamma$ on the residuals of this linearized problem, imposing the constant $K=\frac{\sigma^2}{2\gamma}$ to be equal to their variance. In summary, we plug-in $\alpha$ from classical LLT or HT, and then we obtain $\left(A,\hat\eta(t_0),K\right)$ as required to the SDE definition. The numerical solution of the SDE is performed by the Euler-Maruyama method, which is equivalent to the Milstein method in our case.
+\vskip.2cm
 In the following we apply three different forecast methods on the datasets in \cite{Voight1988}, and we test $t_f$ as an estimator of $t_e$. In all our methods $t_f$ is assumed as a random variable, and its pdf
 $$g_{t_f}:\mathbb R\rightarrow \mathbb R+,\quad \int_0^\infty g_{t_f}(x) dx=1$$
 is estimated following a classical Gaussian kde method.
@@ -214,6 +214,10 @@ Methods 2 and 3 are both based on the new SDE.
 \end{itemize}
 
 Our four case studies refer to the volcanic eruptions of Mt. St. Helens (USA), 1982 (a) and 1981 (b), and of Bezyamyanny (USSR), 1960 (c), and to the landslide of Mt. Toc (Italy), 1963 (d), which caused the Vajont Dam disaster. These datasets are characterized by different values of $\alpha$, and by different confidence intervals in the linear regression. Estimates of $\alpha$ are based on data reported in Appendix \ref{A-1}.
+\vskip.2cm
+In general, the mean path is consistent in the three methods, but UQ is significantly different, as well as the values of $g_{t_f}$. In particular: \begin{description}
+  \item[(a) Mt. St. Helens, 1982 - line length] data values are initially scattered, until $t = t_e - 20$, and then become more aligned. $\alpha \approx 2$, and $E[t_f]$ overestimates $t_e$ of $1$-$3$ days in all the methods. Uncertainty range is twice larger in Method 2 and 3 compared to Method 1.
+\end{description}
 
 \begin{figure}[H]\vskip-.3cm
 \centering
@@ -222,9 +226,9 @@ Our four case studies refer to the volcanic eruptions of Mt. St. Helens (USA), 1
 \label{Fig5}
 \end{figure}
 
-In general, the mean path is consistent in the three methods, but UQ is significantly different, as well as the values of $g_{t_f}$. In particular: \begin{description}
-  \item[(a) Mt. St. Helens, 1982 - line length] data values are initially scattered, until $t = t_e - 20$, and then become more aligned. $\alpha \approx 2$, and $E[t_f]$ overestimates $t_e$ of $1$-$3$ days in all the methods. Uncertainty range is twice larger in Method 2 and 3 compared to Method 1.
+\begin{description}
   \item[(b) Mt. St. Helens, 1981 - fault movement] this example is characterized by $\alpha \approx 1.6$ in HT and $\alpha = 1.3\pm 0.2$ in LLT. In the first case (red), in all methods $E[t_f]$ underestimates $t_e$ of only $1$ day, with uncertainty range $\pm 2$ days in Method 1, and twice larger in Method 2 and 3. The second case (blue) is less accurate. In Method 1, 2 and, 3 $E[t_f]$ overestimates $t_e$ of $14$, $11$, and $14$ days, respectively. Always outside the uncertainty range. However, in Method 3 the $95^{th}$ percentile plot is above 9\% at time $t_e$.
+  \item[(c) Bezymyanny, 1960 - seismic strain] data values are persistently scattered until $t = t_e - 10$, and $\alpha \approx 1.6$. In Method 1, $E[t_f]$ correctly estimates $t_e$, with uncertainty range of $\pm 3$ days. In Methods 2 and 3, $E[t_f]$ underestimates $t_e$ of $1$ day with an uncertainty range twice large.
 \end{description}
 
 \begin{figure}[H]\vskip-.3cm
@@ -235,9 +239,10 @@ In general, the mean path is consistent in the three methods, but UQ is signific
 \end{figure}
 
 \begin{description}
-  \item[(c) Bezymyanny, 1960 - seismic strain] data values are persistently scattered until $t = t_e - 10$, and $\alpha \approx 1.6$. In Method 1, $E[t_f]$ correctly estimates $t_e$, with uncertainty range of $\pm 3$ days. In Methods 2 and 3, $E[t_f]$ underestimates $t_e$ of $1$ day with an uncertainty range twice large.
   \item[(d) Mt. Toc, 1963 - surface movement] According to HT, $\alpha \approx 2$, while according to LLT, $\alpha= 1.7\pm0.3$. In the first case (red), in Method 1 and 3 $E[t_f]$ correctly estimates $t_e$, in Method 2 it underestimates in of $1$ day. Uncertainty range is $\pm 2$ days in Method 1, $\pm 3$ in Method 2, $\pm 4$ in Method 3. In the second case (blue), in Method 1 $E[t_f]$ overestimates $t_e$ of $5$ days, but the uncertainty range is about $\pm 10$ days and captures it. In Method 2 $E[t_f]$ overestimates $t_e$ of $4$ days, but uncertainty is reduced to $\pm 3$ days. Method 3 gives very similar results to Method 1, and the $95^{th}$ percentile plot is above 20\% at time $t_e$.
 \end{description}
+
+In summary, when $\alpha\approx 2$ Method 1 generally provides a good estimator of $t_e$, as well as Methods 2 and 3. They generally have larger uncertainty ranges. Sometimes, when $\alpha \le 1.6$, Method 1 tends to overestimate $t_e$. Method 2 reduces this issue, but model uncertainty is neglected and the estimate still misses $t_e$. Method 3 enhances Method 2, and its doubly stochastic nature allows the production of either mean probability values or more conservative 95$^{th}$ percentile values, with significantly high probability of eruption at time $t_e$, even when the mean estimate fails the forecast.
 
 \begin{figure}[H]\vskip-.3cm
 \centering
@@ -246,9 +251,7 @@ In general, the mean path is consistent in the three methods, but UQ is signific
 \label{Fig7}
 \end{figure}
 
-In summary, when $\alpha\approx 2$ Method 1 generally provides a good estimator of $t_e$, as well as Methods 2 and 3. They generally have larger uncertainty ranges. Sometimes, when $\alpha \le 1.6$, Method 1 tends to overestimate $t_e$. Method 2 reduces this issue, but model uncertainty is neglected and the estimate still misses $t_e$. Method 3 enhances Method 2, and its doubly stochastic nature allows the production of either mean probability values or more conservative 95$^{th}$ percentile values, with significantly high probability of eruption at time $t_e$, even when the mean estimate fails the forecast.
-
-\section{Examples of probability forecasts}
+\section{Examples of probability forecasts}\label{s5}
 The estimators defined in the previous section are informed by the entire sequence of data, up to the eruption onset or landslide initiation $t_e$. This provides useful insight on the validity of the model, but it is not a forecast \citep{Boue2015}. Indeed in any forecasting problem the sequence of data is available up to a time $t_1<t_e$, that represents the current time of the forecast. All the data collected after time $t_1$ cannot be considered.
 
 In the following figures we display forecasts of $t_e$ based on the ODE method, and obtained from the data collected in a limited time window $T=[t_2,t_1]$. We focus on the two examples of Mt. St. Helens, 1982 - line length $(\alpha\approx1.98)$, and Bezymyanny, 1960 - seismic strain $(\alpha\approx1.65)$. Figure \ref{Fig13} adopts Method 1, Figure \ref{Fig8_10} Method 2 and Figure \ref{Fig9_11} Method 3. Method 1 and mean pdf in Method 3 both implement a Monte Carlo of 20,000 samples, Method 2 a Monte Carlo of 5,000 samples, the percentile values in Method 3 are based on a hierarchical Monte Carlo of $300\times 500=1.5e5$ samples.
@@ -295,26 +298,25 @@ In summary, forecasting results of Method 1 and Method 3 are similar, but the mo
 \label{Fig9_11}
 \end{figure}
 
-\section{Discussion}
-We described three different methods for estimating $t_f$, the ODE-based Method 1, the new SDE-based Method 2, and its doubly stochastic formulation Method 3. We tested the methods in four case studies, and in two of them we also performed forecasts on moving time windows. Figure \ref{Fig15} summarizes the material failure likelihood in day $t_e$, reported as a probability percentage. Plot (a) compares Method 1 (black bars) and Method 2 (colored bars). Method 1 always outperforms Method 2 when $\alpha$ is based on the more accurate HT (red bars), and provides likelihoods above $15\%$ in four cases over five. In contrast, when $\alpha$ is based on LLT (blue bars) the two methods provide similar likelihoods, below $5\%$ in four cases over five, and below $1\%$ in two cases. Plot (b) displays the likelihood provided by the doubly stochastic Method 3. Full colored bars report the mean likelihood, shaded bars the 95$^{th}$ percentiles of the likelihood. Mean likelihoods are very similar to those provided by Method 2, but when those were below $1\%$, these are $\approx 1\%$. The 95$^{th}$ percentile values are significantly higher. In particular, when $\alpha$ is based on LLT (blue bars), Method 3 percentiles are all higher than the Method 1 values.
+\section{Discussion}\label{s6}
+We described three different methods for estimating $t_f$, the ODE-based Method 1, the new SDE-based Method 2, and its doubly stochastic formulation Method 3. We tested the methods in four case studies, and in two of them we also performed forecasts on moving time windows.
 
+Figure \ref{Fig15} summarizes the likelihood $g_{t_f}(t_e)$, reported as a probability percentage. Plot (a) compares Method 1 (black bars) and Method 2 (colored bars). Method 1 always outperforms Method 2 when $\alpha$ is based on the more accurate HT (red bars), and provides likelihoods above $15\%$. In contrast, when $\alpha$ is based on LLT (blue bars) the two methods provide lower likelihoods, below $1\%$ in some case. Plot (b) displays the likelihood provided by the doubly stochastic Method 3. Full colored bars report the mean likelihood, shaded bars the 95$^{th}$ percentiles of the likelihood. Mean likelihoods are very similar or above those provided by Method 2. The 95$^{th}$ percentile values are significantly higher. In particular, when $\alpha$ is based on LLT (blue bars), Method 3 percentiles are all higher than in Method 1.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.90\textwidth]{Fig15_plus.png}
-\caption{Barplots of the likelihood $P\{t_e=t_f\}$. In plot (a) the black bars assume Method 1, the colored bars Method 2. Plot (b) assumes Method 3, and the full bars are the mean values, and the shaded bars are the 95$^{th}$ percentile values of the likelihood.}
+\includegraphics[width=0.95\textwidth]{Fig15_plus.png}
+\caption{Barplots of the likelihood $g_{t_f}(t_e)$. In plot (a) the black bars assume Method 1, the colored bars Method 2. Plot (b) assumes Method 3, and the full bars are the mean values, and the shaded bars are the 95$^{th}$ percentile values of the likelihood.}
 \label{Fig15}
 \end{figure}
-
-This features are confirmed and strengthened in the material failure likelihoods of the forecasting examples based on the moving windows. Figure \ref{Fig16} summarizes these likelihoods. Plot (a) compares Method 1 (black bars) and Method 2 (colored bars). In Mt. St. Helens, 1982 - line length (blue), Method 2 outperforms Method 1 only in the third time window, and it is the only likelihood above $10\%$. In Bezymyanny, 1960 - seismic strain (red), Method 2 outperforms Method 1 only in the first time window, and the likelihoods are all close to $5\%$. Plot (b) displays the likelihoods provided by the doubly stochastic Method 3. Full colored bars report the mean likelihood, shaded bars its 95$^{th}$ percentile values. In this case, mean likelihoods are very similar to those provided by Method 1, but slightly lower. The 95$^{th}$ percentile values are again significantly higher, around $5\%$ in the first and second time windows, and about $16\%$ and $12\%$ in the Mt. St. Helens and Bezyamyanny case studies, respectively.
-
+These features are confirmed and strengthened in the forecasting examples based on the moving windows. Figure \ref{Fig16} summarizes the corresponding $g_{t_f}(t_e)$. Plot (a) compares Method 1 (black bars) and Method 2 (colored bars). In Mt. St. Helens, 1982 - line length (blue), Method 2 outperforms Method 1 only in the third time window, with the only likelihood above $10\%$. In Bezymyanny, 1960 - seismic strain (red), Method 2 outperforms Method 1 in the first two time windows, with likelihoods above $5\%$. Plot (b) concerns the doubly stochastic Method 3. Full colored bars report the mean likelihood, shaded bars its 95$^{th}$ percentile values. In this case, mean likelihoods are very similar to those provided by Method 1. The 95$^{th}$ percentile values are again significantly higher, from $5\%$ to $10\%$ in the first and second time windows, and above $15\%$ in the third.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.90\textwidth]{Fig16_plus.png}
-\caption{Barplots of the likelihood $P\{t_e=t_f\}$ in two forecasting examples, on three different time windows. In plot (a) the black bars assume Method 1, the colored bars Method 2. Plot (b) assumes Method 3, and the full bars are the mean values, and the shaded bars are the 95$^{th}$ percentile values of the likelihood.}
+\includegraphics[width=0.95\textwidth]{Fig16_plus.png}
+\caption{Barplots of the likelihood $g_{t_f}(t_e)$ in two forecasting examples, on three different time windows. In plot (a) the black bars assume Method 1, the colored bars Method 2. Plot (b) assumes Method 3, and the full bars are the mean values, and the shaded bars are the 95$^{th}$ percentile values of the likelihood.}
 \label{Fig16}
 \end{figure}
 
-\section{Conclusions}
+\section{Conclusions}\label{s7}
 In this study, we have introduced a new doubly stochastic method for performing material failure forecasts. The method enhances the well known FFM equation, introducing a new formulation similar to the Hull-White model. The model is a mean-reverting SDE, which assumes the traditional ODE as the mean solution. New parameters include the noise standard deviation $\sigma$ and the mean-reversion rapidity $\gamma$. They are estimated based on the properties of the residuals in the original linearized problem. The implementation allows the model to make excursions from the classical solutions, including the possibility of some degree of aleatory uncertainty in the estimation. This provides probability forecasts instead that deterministic predictions.
 
 We compared the new method and the forecasting method based on the classical formulation. We also compared an Hull-White model without considering the model uncertainty, and its doubly stochastic formulation. A comparison is performed on four historical datasets of precursory signals already studied with the classical FFM, including line-length and fault movement at Mt. St. Helens, 1981-82, seismic signals registered from Bezymyanny, 1960, and surface movement of Mt. Toc, 1963. We also considered forecasting problems over moving time windows, based on data in the case studies of Mt. St. Helens, 1982 and Bezymyanny, 1960. The data shows the performance of the methods across a range of possible values of convexity $\alpha$ and amounts of scattering in the observations, and the increased forecasting skill of the doubly stochastic formulation in Method 3.
@@ -331,13 +333,13 @@ Discrete observations provide us information on $K=\frac{\sigma^2}{\gamma}$, whi
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.95\textwidth]{Fig12_plus.png}
-\caption{Forecasts of $t_f$ based on Method 2. The solutions assume equal $K=\frac{\sigma^2}{\gamma}$, but different $(\sigma, \gamma)$. In plots (a,c) $\gamma^{-1}=7.5$, and in plots (b,d) $\gamma^{-1}=30$. The bold line is the pdf of $t_f$. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the median path. Thin dotted lines show examples of random paths. A thin dashed line marks $1/x_0$, and a dashed black line marks $t_e$.}
+\caption{Forecasts of $t_f$ based on Method 2. The solutions assume equal $K=\frac{\sigma^2}{\gamma}$, but different $(\sigma, \gamma)$. In plots (a,c) $\gamma^{-1}=7.5$, and in plots (b,d) $\gamma^{-1}=30$. The bold line is the pdf of $t_f$. Thin dashed lines bound the $90\%$ confidence interval of the SDE paths, and a thin continuous line is the mean path. The thin dotted lines are random paths. A thin dashed line marks $1/x_0$, and a dashed black line marks $t_e$.}
 \label{Fig12}
 \end{figure}
 The estimators in all our case studies assume $\gamma=1/15$.  This is a choice based on the empirical observation that the total length of temporal sequence is at the scale of $45$ days, and the duration of well-aligned observations is at the scale of $15$ days. In Figure \ref{Fig12} we show examples of solutions with doubled or halved $\gamma$. There is an apparent effect on the $90\%$ confidence interval of the SDE paths, which is enlarged increasing $\gamma$, and terminally bent down towards the real axis. This is increased in (c,d), where $\alpha=1.65$. However, even in that case the effect of $g_{t_f}$ is minor, and increasing $\gamma$ of four times reduces $E[t_f]$ of about $5$ days.
 
 \section{Classical statistical analysis of FFM}\label{A-1}
-In our study we apply a linearized least-squared approach, based on a preliminary estimate of $\alpha$. Nonlinear regression methods have also been applied to the ODE problem, but in this study we relied on the linearized method for simplicity \citep{Bell2011}. 
+In our study we apply a linearized least-squared approach, based on a preliminary estimate of $\alpha$. Nonlinear regression methods have also been applied to the ODE problem, but in this study we relied on the linearized method for simplicity \citep{Bell2011}.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.95\textwidth]{Fig4_plus.png}
@@ -354,7 +356,7 @@ In the Hindsight technique (HT), a LRM is applied to the equation (from eq. \ref
 $$\log(X(t))=\frac{1}{1-\alpha}\log(t_f-t)+\frac{\log[A(\alpha-1)]}{1-\alpha},$$
 producing estimates of $\frac{1}{1-\alpha}$ and $\frac{\log[A(\alpha-1)]}{1-\alpha}$. It does not rely on the rate change, but requires to know the failure time $t_f$ in advance. This is the reason of its name. Thus, it is not a method producing forecasts, but can be solely used in retrospective analysis. Moreover, while the value of $\alpha$ is well constrained, the value of $A$ is not. The uncertainty range affecting $A$ is increased by the uncertainty affecting $\alpha$, and the estimate is done in logarithmic scale.
 
-Figure \ref{Fig4} shows the results of the LLT and HT applied to the Mt. St. Helens (a,b), and to the Bezyamyanny \& Mt. Toc datasets (c,d). We note that the accuracy of HT is generally higher. In our examples we implemented seven datasets already processed in \cite{Voight1988}, discarding four of them. These would require a more detailed UQ of the unprocessed data source. In detail, the Mt. St. Helens tilt dataset shows significantly discordant results between LLT and HT, and both the datasets are excluded. The uncertainty affecting $\alpha$ in the Bezymyanny dataset according to LLT is very large and is partially supported below $1$. The LLT results of the Mt. Toc, 1960 dataset are characterized by $\alpha\approx 1$ and a very low scattering, which make uncertainty quantification problematic without enabling the definition of a significant noise.
+Figure \ref{Fig4} shows the results of the LLT and HT applied to the Mt. St. Helens (a,b), and to the Bezyamyanny \& Mt. Toc datasets (c,d). We note that the accuracy of HT is generally higher. In our examples we implemented seven datasets already processed in \cite{Voight1988}, discarding four of them. These would require a more detailed UQ of the unprocessed data source. In detail, the Mt. St. Helens tilt dataset shows significantly discordant results between LLT and HT, and both the datasets are excluded. The uncertainty affecting $\alpha$ in the Bezymyanny dataset according to LLT is very large and is partially supported below $1$. The LLT results of the Mt. Toc, 1960 dataset are characterized by $\alpha\approx 1$ and a very low scattering, insufficient to define a significant noise.
 
 \bibliographystyle{apalike}
 \bibliography{bibfileFFM}
