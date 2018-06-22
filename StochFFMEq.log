@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.12.18)  22 JUN 2018 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.12.18)  22 JUN 2018 16:38
 entering extended mode
 **C:/Users/Roberto/Desktop/R_volcanics/2018_06/precursors/newDraft/StochFFMEq.t
 ex
@@ -495,38 +495,38 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 188.
  [7 <./Fig3_plus.png>]
-[8] <Fig5_plus.png, id=298, 596.4684pt x 566.115pt>
+[8] <Fig5_plus.png, id=299, 596.4684pt x 566.115pt>
 File: Fig5_plus.png Graphic file (type png)
  <use Fig5_plus.png>
 Package pdftex.def Info: Fig5_plus.png used on input line 225.
 (pdftex.def)             Requested size: 446.26582pt x 423.57454pt.
 
-[9 <./Fig5_plus.png>] <Fig6_plus.png, id=303, 582.2553pt x 553.5882pt>
+[9 <./Fig5_plus.png>] <Fig6_plus.png, id=304, 582.2553pt x 553.5882pt>
 File: Fig6_plus.png Graphic file (type png)
 
 <use Fig6_plus.png>
 Package pdftex.def Info: Fig6_plus.png used on input line 238.
 (pdftex.def)             Requested size: 446.26582pt x 424.29605pt.
  [10 <./Fig6_plus.png>]
-<Fig7_plus.png, id=308, 586.1097pt x 558.1653pt>
+<Fig7_plus.png, id=309, 586.1097pt x 558.1653pt>
 File: Fig7_plus.png Graphic file (type png)
  <use Fig7_plus.png>
 Package pdftex.def Info: Fig7_plus.png used on input line 247.
 (pdftex.def)             Requested size: 446.26582pt x 424.99358pt.
- [11 <./Fig7_plus.png>] <Fig13_new.png, id=319, 584.9052pt x 804.606pt>
+ [11 <./Fig7_plus.png>] <Fig13_new.png, id=320, 584.9052pt x 804.606pt>
 File: Fig13_new.png Graphic file (type png)
 
 <use Fig13_new.png>
 Package pdftex.def Info: Fig13_new.png used on input line 282.
 (pdftex.def)             Requested size: 413.3867pt x 568.68375pt.
- [12] <Fig8_9new.png, id=327, 584.9052pt x 804.606pt>
+ [12] <Fig8_9new.png, id=328, 584.9052pt x 804.606pt>
 File: Fig8_9new.png Graphic file (type png)
 
 <use Fig8_9new.png>
 Package pdftex.def Info: Fig8_9new.png used on input line 289.
 (pdftex.def)             Requested size: 413.3867pt x 568.68375pt.
  [13 <./Fig13_new.png>]
-<Fig10_11new.png, id=333, 584.9052pt x 804.606pt>
+<Fig10_11new.png, id=334, 584.9052pt x 804.606pt>
 File: Fig10_11new.png Graphic file (type png)
  <use Fig10_11new.png>
 Package pdftex.def Info: Fig10_11new.png used on input line 296.
@@ -536,26 +536,26 @@ Package pdftex.def Info: Fig10_11new.png used on input line 296.
 Overfull \vbox (9.71783pt too high) has occurred while \output is active []
 
 
-[15 <./Fig10_11new.png>] <Fig15_plus.png, id=343, 711.6186pt x 423.5022pt>
+[15 <./Fig10_11new.png>] <Fig15_plus.png, id=344, 711.6186pt x 423.5022pt>
 File: Fig15_plus.png Graphic file (type png)
 
 <use Fig15_plus.png>
 Package pdftex.def Info: Fig15_plus.png used on input line 307.
 (pdftex.def)             Requested size: 446.26582pt x 265.58644pt.
  [16 <./Fig15_plus.png>]
-<Fig16_plus.png, id=351, 810.3876pt x 408.3255pt>
+<Fig16_plus.png, id=352, 810.3876pt x 408.3255pt>
 File: Fig16_plus.png Graphic file (type png)
  <use Fig16_plus.png>
 Package pdftex.def Info: Fig16_plus.png used on input line 320.
 (pdftex.def)             Requested size: 446.26582pt x 224.86008pt.
- [17 <./Fig16_plus.png>] <Fig12_plus.png, id=358, 585.8688pt x 562.2606pt>
+ [17 <./Fig16_plus.png>] <Fig12_plus.png, id=359, 585.8688pt x 562.2606pt>
 File: Fig12_plus.png Graphic file (type png)
 
 <use Fig12_plus.png>
 Package pdftex.def Info: Fig12_plus.png used on input line 336.
 (pdftex.def)             Requested size: 446.26582pt x 428.29198pt.
  [18 <./Fig12_plus.png>]
-<Fig4_plus.png, id=372, 575.0283pt x 531.6663pt>
+<Fig4_plus.png, id=373, 575.0283pt x 531.6663pt>
 File: Fig4_plus.png Graphic file (type png)
  <use Fig4_plus.png>
 Package pdftex.def Info: Fig4_plus.png used on input line 348.
@@ -608,9 +608,9 @@ ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files
 /type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/symbols/msbm10.pfb>
-Output written on StochFFMEq.pdf (23 pages, 2021920 bytes).
+Output written on StochFFMEq.pdf (23 pages, 2022098 bytes).
 PDF statistics:
- 505 PDF objects out of 1000 (max. 8388607)
+ 506 PDF objects out of 1000 (max. 8388607)
  101 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

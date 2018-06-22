@@ -199,7 +199,7 @@ If $\alpha$ is given, then a linearized least square method can be used to fit p
 $$X(t)^{1-\alpha}=(1-\alpha)A(t-t_0)+\eta(t_0),$$
 producing estimates of $(1-\alpha)A$ and $\hat\eta(t_0)$.
 
-Finally, we fit the stochastic parameters $\sigma$ and $\gamma$ on the residuals of this linearized problem, by imposing the constant $K=\frac{\sigma^2}{2\gamma}$ to be equal to the variance of residuals, and assuming $\gamma^{-1}=15$ days. In summary, we plug-in $\alpha$ from classical LLT or HT, and then we obtain $\left(A,\hat\eta(t_0),K\right)$ as required by the SDE definition. The numerical solution of the SDE is performed by the Euler-Maruyama method, which is equivalent to the Milstein method in our case.
+Finally, we fit the noise parameter $\sigma$ on the residuals of this linearized problem, by imposing the constant $K=\frac{\sigma^2}{2\gamma}$ to be equal to their variance and assuming $\gamma^{-1}=15$ days, as explained in section \ref{s3}. In summary, we plug-in $\alpha$ from classical LLT or HT, then we obtain $\left(A,\hat\eta(t_0),K\right)$, and thus $\sigma$ once $\gamma$ is given. The numerical solution of the SDE is performed by the Euler-Maruyama method, which is equivalent to the Milstein method in our case.
 \vskip.2cm
 In the following we apply three different forecast methods on the datasets in \cite{Voight1988}, and we test $t_f$ as an estimator of $t_e$. In all our methods $t_f$ is assumed as a random variable, and its pdf
 $$g_{t_f}:\mathbb R\rightarrow \mathbb R+,\quad \int_0^\infty g_{t_f}(x) dx=1$$
